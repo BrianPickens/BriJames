@@ -59,8 +59,8 @@ public class PlayerCamera : MonoBehaviour {
 			_myTransform.rotation = rotation;
 			_myTransform.position = position;
 		} else {
-			_myTransform.position = new Vector3 (target.position.x, target.position.y + height, target.position.z - walkDistance);
-			_myTransform.LookAt (target);
+	//		_myTransform.position = new Vector3 (target.position.x, target.position.y + height, target.position.z - walkDistance);
+		//	_myTransform.LookAt (target);
 			_x = 0;
 			_y = 0;
 
