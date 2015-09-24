@@ -54,7 +54,8 @@ public class PlayerCamera : MonoBehaviour {
 			_y += Input.GetAxis ("Mouse Y") * ySpeed * 0.02f;
 
 			Quaternion rotation = Quaternion.Euler (_y, _x, 0);
-			Vector3 position = rotation * new Vector3 (0.0f, 0.0f, -walkDistance) + target.position;
+			//Vector3 position = rotation * new Vector3 (0.0f, 0.0f, -walkDistance) + target.position;
+			Vector3 position = rotation * new Vector3 (0, 0, -walkDistance) + target.position;
 
 			_myTransform.rotation = rotation;
 			_myTransform.position = position;
