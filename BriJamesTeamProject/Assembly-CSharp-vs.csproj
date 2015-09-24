@@ -47,7 +47,9 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\GameMaster.cs" />
+     <Compile Include="Assets\Scripts\LockedCamera.cs" />
      <Compile Include="Assets\Scripts\MoveCharacter.cs" />
+     <Compile Include="Assets\Scripts\MoveSide.cs" />
      <Compile Include="Assets\Scripts\NewMovement.cs" />
      <Compile Include="Assets\Scripts\PlayerCamera.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
