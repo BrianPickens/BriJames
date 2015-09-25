@@ -32,7 +32,7 @@ public class MoveSide : MonoBehaviour {
 		
 		if (_controller.isGrounded) {
 			
-			_moveDirection = new Vector3(Input.GetAxis("Strafe"),0, Input.GetAxis("Vertical"));
+			_moveDirection = new Vector3(Input.GetAxis("Horizontal"),0, Input.GetAxis("Vertical"));
 			_moveDirection = _myTransform.TransformDirection(_moveDirection).normalized;
 			_moveDirection *= moveSpeed;
 			

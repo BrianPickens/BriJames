@@ -21,6 +21,7 @@ public class PlayerCamera : MonoBehaviour {
 
 	void Awake(){
 		_myTransform = transform;
+		target = GameObject.FindWithTag ("Player").GetComponent<Transform>();
 	}
 
 	void Start () {
