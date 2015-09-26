@@ -23,10 +23,10 @@ public class LockedCamera : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Vector3 targetPosition = target.TransformPoint (new Vector3 (0, 5, -10));
+		Vector3 targetPosition = target.TransformPoint (new Vector3 (0, height, walkDistance));
 		_myTransform.position = Vector3.SmoothDamp (_myTransform.position, targetPosition, ref velocity, smoothTime);
-	
-	}
+        _myTransform.LookAt(target);
+    }
 
 	public void CameraStart(){
 		_myTransform.position = new Vector3 (target.position.x, target.position.y + height, target.position.z - walkDistance);
