@@ -42,7 +42,12 @@ public class MoveSide : MonoBehaviour {
 		}	
 		
 		else {
-			if((_collisionFlags & CollisionFlags.CollidedBelow) == 0){
+            _moveDirection = new Vector3(Input.GetAxis("Horizontal"), _moveDirection.y, Input.GetAxis("Vertical"));
+            _moveDirection = transform.TransformDirection(_moveDirection);
+            _moveDirection.x *= moveSpeed;
+            _moveDirection.z *= moveSpeed;
+
+            if ((_collisionFlags & CollisionFlags.CollidedBelow) == 0){
 				
 			}
 		}
