@@ -9,7 +9,9 @@ public class MoveSide : MonoBehaviour {
 	public float strafeSpeed = 4f;
 	public float jumpHeight = 8f;
 	public CollisionFlags _collisionFlags;
-    public Transform Shadow;
+    public GameObject AttackArea;
+	public GameObject DamageArea;
+
 
 	private Vector3 _moveDirection;
 	private Transform _myTransform;
@@ -26,10 +28,23 @@ public class MoveSide : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-//		if (Mathf.Abs (Input.GetAxis ("Horizontal")) > 0) {
-//			_myTransform.Rotate(0, Input.GetAxis("Horizontal") * Time.deltaTime * rotationSpeed, 0);
-//		}
+
+        //		if (Mathf.Abs (Input.GetAxis ("Horizontal")) > 0) {
+        //			_myTransform.Rotate(0, Input.GetAxis("Horizontal") * Time.deltaTime * rotationSpeed, 0);
+        //		}
+
+        if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Return))
+        {
+			DamageArea.SetActive (false);
+            AttackArea.SetActive (true);
+        }
+
+        else
+        {
+            AttackArea.SetActive (false);
+			DamageArea.SetActive (true);
+        }
+        
 		
 		if (_controller.isGrounded) {
 			
@@ -56,4 +71,5 @@ public class MoveSide : MonoBehaviour {
 		_collisionFlags = _controller.Move(_moveDirection * Time.deltaTime);
 		
 	}
+
 }

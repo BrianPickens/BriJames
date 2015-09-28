@@ -13,7 +13,7 @@ public class LockedCamera : MonoBehaviour {
 
 	void Awake(){
 		_myTransform = transform;
-		target = GameObject.FindWithTag ("Player").GetComponent<Transform>();
+		target = GameObject.FindWithTag ("Target").GetComponent<Transform>();
 	}
 
 	// Use this for initialization
