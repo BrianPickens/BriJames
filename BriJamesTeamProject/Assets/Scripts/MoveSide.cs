@@ -9,7 +9,8 @@ public class MoveSide : MonoBehaviour {
 	public float strafeSpeed = 4f;
 	public float jumpHeight = 8f;
 	public CollisionFlags _collisionFlags;
-	
+    public Transform Shadow;
+
 	private Vector3 _moveDirection;
 	private Transform _myTransform;
 	private CharacterController _controller;

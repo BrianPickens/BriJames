@@ -170,7 +170,7 @@ GameObject:
   - 135: {fileID: 70462193}
   - 23: {fileID: 70462192}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
