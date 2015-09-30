@@ -44,7 +44,6 @@ GameObject:
   - 33: {fileID: 3372060}
   - 23: {fileID: 2367486}
   - 114: {fileID: 11452410}
-  - 54: {fileID: 5401664}
   - 136: {fileID: 13677638}
   m_Layer: 0
   m_Name: AttackArea
@@ -52,7 +51,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &138350
 GameObject:
   m_ObjectHideFlags: 0
@@ -111,8 +110,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 133112}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.1258595, y: 3.12585688, z: 3.12585688}
+  m_LocalPosition: {x: 0, y: 10.8599997, z: 0}
+  m_LocalScale: {x: 3.1258595, y: 16.7461948, z: 3.12585688}
   m_Children: []
   m_Father: {fileID: 439642}
   m_RootOrder: 2
@@ -191,7 +190,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: cc7772f36e9107c4ab4997904bfec9a3, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -239,7 +238,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: cc7772f36e9107c4ab4997904bfec9a3, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -274,21 +273,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 133112}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &5401664
-Rigidbody:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 133112}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: .0500000007
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!54 &5469084
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -296,7 +280,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 158636}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 1
@@ -315,6 +299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b94b1e38933a3478b9da988bec2f28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SoundMaker: {fileID: 0}
 --- !u!114 &11480838
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -327,7 +312,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  jumpForce: 300
+  jumpForce: 2000
   gravityMultiplier: 2
   grounded: 0
   GroundCheck: {fileID: 411938}
@@ -337,6 +322,7 @@ MonoBehaviour:
     m_Bits: 256
   AttackArea: {fileID: 133112}
   DamageArea: {fileID: 126828}
+  SoundMaker: {fileID: 0}
 --- !u!136 &13631364
 CapsuleCollider:
   m_ObjectHideFlags: 1

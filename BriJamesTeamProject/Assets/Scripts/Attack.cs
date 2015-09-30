@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Attack : MonoBehaviour {
 
+	public GameObject SoundMaker;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -17,6 +19,7 @@ public class Attack : MonoBehaviour {
     {
         if(other.gameObject.tag == "Enemy")
         {
+			SoundMaker.GetComponent<SoundManager>().HitOther();
 			other.gameObject.GetComponent<Rigidbody>().mass = 1;
 			other.gameObject.GetComponent<Enemy>().dead = true;
 			other.gameObject.GetComponent<Enemy>().deadAnim = false;
@@ -24,6 +27,7 @@ public class Attack : MonoBehaviour {
         }
 
 		if (other.gameObject.tag == "Explodable") {
+			SoundMaker.GetComponent<SoundManager>().HitOther();
 			other.gameObject.GetComponent<Rigidbody>().mass = 1;
 			other.gameObject.GetComponent<Reactive>().aSplode = true;
 

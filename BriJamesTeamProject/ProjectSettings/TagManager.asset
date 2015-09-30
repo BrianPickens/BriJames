@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Target
   - Explodable
+  - SoundManager
   layers:
   - Default
   - TransparentFX

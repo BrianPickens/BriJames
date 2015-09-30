@@ -16,6 +16,8 @@ public class RigidBodyMovement : MonoBehaviour {
 	public GameObject AttackArea;
 	public GameObject DamageArea;
 
+	public GameObject SoundMaker;
+
 
 	void Awake(){
 		_myRigidbody = this.GetComponent<Rigidbody> ();
@@ -58,6 +60,7 @@ public class RigidBodyMovement : MonoBehaviour {
 		{
 			DamageArea.SetActive (false);
 			AttackArea.SetActive (true);
+			SoundMaker.GetComponent<SoundManager>().MakeSound();
 		}
 		
 		else
