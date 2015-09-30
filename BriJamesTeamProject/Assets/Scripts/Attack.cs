@@ -17,7 +17,9 @@ public class Attack : MonoBehaviour {
     {
         if(other.gameObject.tag == "Enemy")
         {
-            Destroy(other.gameObject);
+			other.gameObject.GetComponent<Enemy>().dead = true;
+			other.gameObject.GetComponent<Enemy>().deadAnim = false;
+           // Destroy(other.gameObject);
         }
     }
 }
