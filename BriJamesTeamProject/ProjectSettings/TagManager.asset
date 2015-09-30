@@ -9,6 +9,8 @@ TagManager:
   - Target
   - Explodable
   - SoundManager
+  - Rabbit
+  - Cow
   layers:
   - Default
   - TransparentFX
