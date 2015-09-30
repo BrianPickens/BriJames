@@ -17,9 +17,16 @@ public class Attack : MonoBehaviour {
     {
         if(other.gameObject.tag == "Enemy")
         {
+			other.gameObject.GetComponent<Rigidbody>().mass = 1;
 			other.gameObject.GetComponent<Enemy>().dead = true;
 			other.gameObject.GetComponent<Enemy>().deadAnim = false;
            // Destroy(other.gameObject);
         }
+
+		if (other.gameObject.tag == "Explodable") {
+			other.gameObject.GetComponent<Rigidbody>().mass = 1;
+			other.gameObject.GetComponent<Reactive>().aSplode = true;
+
+		}
     }
 }

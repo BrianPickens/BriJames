@@ -54,7 +54,7 @@ public class RigidBodyMovement : MonoBehaviour {
 
 	void Update () {
 
-		if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Return))
+		if (Input.GetMouseButton(0) || Input.GetKey(KeyCode.Return))
 		{
 			DamageArea.SetActive (false);
 			AttackArea.SetActive (true);
