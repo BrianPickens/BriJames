@@ -13,7 +13,7 @@ public class Reactive : MonoBehaviour {
 	void Start () {
 		aSplode = false;
 		_myRigidbody = GetComponent<Rigidbody> ();
-		_myRigidbody.freezeRotation = true;
+	//	_myRigidbody.freezeRotation = true;
 	
 		gameObject.tag = "Explodable";
 	
