@@ -146,7 +146,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 158636}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20.3999996, y: 1.78999996, z: -4.98999977}
+  m_LocalPosition: {x: -13.2969131, y: 3.28999996, z: -10.9918423}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 411938}
@@ -300,6 +300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SoundMaker: {fileID: 0}
+  growRate: .5
 --- !u!114 &11480838
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -312,7 +313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  jumpForce: 2000
+  jumpForce: 2500
   gravityMultiplier: 2
   grounded: 0
   GroundCheck: {fileID: 411938}

@@ -20,6 +20,7 @@ public class RigidBodyMovement : MonoBehaviour {
 
 
 	void Awake(){
+		SoundMaker = GameObject.FindWithTag ("SoundManager");
 		_myRigidbody = this.GetComponent<Rigidbody> ();
 	}
 

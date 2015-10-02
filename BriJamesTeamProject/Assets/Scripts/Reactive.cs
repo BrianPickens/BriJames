@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent (typeof (Rigidbody))]
+
 public class Reactive : MonoBehaviour {
 
 
@@ -11,6 +13,8 @@ public class Reactive : MonoBehaviour {
 	void Start () {
 		aSplode = false;
 		_myRigidbody = GetComponent<Rigidbody> ();
+		_myRigidbody.freezeRotation = true;
+	
 		gameObject.tag = "Explodable";
 	
 	}

@@ -9,6 +9,7 @@ public class Attack : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 	
+		SoundMaker = GameObject.FindWithTag ("SoundManager");
 	}
 	
 	// Update is called once per frame
