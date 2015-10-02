@@ -13,10 +13,12 @@ public class Enemy : MonoBehaviour {
 	public float maxXZ = 400f;
 	public float minY = 200f;
 	public float maxY = 400f;
-
+    private float timer;
+    public float timerTarget;
 
 	// Use this for initialization
 	void Start () {
+        timer = timerTarget;
 		gameObject.tag = "Rabbit";
 		deadAnim = true;
 		_myRigidbody = GetComponent<Rigidbody> ();
@@ -28,6 +30,8 @@ public class Enemy : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
+
+
 		if (Target != null && !dead) {
 		//	Target.position = new Vector3 (Target.position.x, _myTransform.position.y, Target.position.z);
 		//	_myTransform.LookAt(Target);
@@ -39,6 +43,16 @@ public class Enemy : MonoBehaviour {
 			_myRigidbody.AddForce(deadFly);
 			deadAnim = true;
 		}
+
+        if (dead && deadAnim)
+        {
+            timer -= Time.deltaTime;
+            if (timer <= 0)
+            {
+                dead = false;
+                timer = timerTarget;
+            }
+        }
 	
 	}
 
