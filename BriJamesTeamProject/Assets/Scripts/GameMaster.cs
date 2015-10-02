@@ -15,5 +15,9 @@ public class GameMaster : MonoBehaviour {
 			Application.Quit ();
 		}
 
+		if (Input.GetKeyDown (KeyCode.Backspace)){
+			Application.LoadLevel (Application.loadedLevel);
+		}
+
 	}
 }
