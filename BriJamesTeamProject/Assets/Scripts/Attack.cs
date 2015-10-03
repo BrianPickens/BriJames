@@ -5,16 +5,22 @@ public class Attack : MonoBehaviour {
 
 	public GameObject SoundMaker;
 	public float growRate = 0.5f;
+	public Transform _myTransform;
 
 	// Use this for initialization
+
 	void Start () {
-	
+		_myTransform = transform;
 		SoundMaker = GameObject.FindWithTag ("SoundManager");
+		transform.localScale = new Vector3 (10f,20f,10f);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+		transform.localScale -= new Vector3 (0.5f, 0f, 0.5f);
+		if (transform.localScale.x < 0) {
+			transform.localScale = new Vector3(30f,20f,30f);
+		}
 	}
 
 	public void Reset(){
