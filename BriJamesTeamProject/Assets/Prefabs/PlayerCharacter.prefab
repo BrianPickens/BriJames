@@ -329,7 +329,7 @@ MonoBehaviour:
   gravityMultiplier: 2
   grounded: 0
   GroundCheck: {fileID: 411938}
-  groundRadius: .200000003
+  groundRadius: 1
   WhatisGround:
     serializedVersion: 2
     m_Bits: 256

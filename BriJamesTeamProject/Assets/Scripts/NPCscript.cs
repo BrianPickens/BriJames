@@ -15,11 +15,12 @@ public class NPCscript : MonoBehaviour {
 	
 	}
 
-	void OnTriggerEnter(Collider other){
+	void OnTriggerStay(Collider other){
 
-		if (other.gameObject.tag == "Player") {
-			Debug.Log ("enter");
-			Dialogue.SetActive (true);
+		if(Input.GetKeyDown(KeyCode.Space)){
+			if (other.gameObject.tag == "Player") {
+				Dialogue.SetActive (true);
+			}
 		}
 	}
 

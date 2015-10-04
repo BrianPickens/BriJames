@@ -32,17 +32,17 @@ public class Attack : MonoBehaviour {
 			MeshRenderer renderer = GetComponent<MeshRenderer> ();
 			Material material = renderer.material;
 			Color color = renderer.material.color;
-			if (color.a < 0.5f) {
-				color.a += 0.01f;
+			if (color.a < 0.6f) {
+				color.a += 0.005f;
 			}
 			renderer.material.color = color;
 			transform.localScale -= new Vector3 (growRate, 0f, growRate);
 		} else if (transform.localScale.x < 10 && charging == 2) {
-			MeshRenderer renderer = GetComponent<MeshRenderer> ();
-			Material material = renderer.material;
-			Color color = renderer.material.color;
-			color.a = 0.5f;
-			renderer.material.color = color;
+//			MeshRenderer renderer = GetComponent<MeshRenderer> ();
+//			Material material = renderer.material;
+//			Color color = renderer.material.color;
+//			color.a = 0.5f;
+//			renderer.material.color = color;
 			transform.localScale += new Vector3 (explodeRate, 0f, explodeRate);
 
 		}
