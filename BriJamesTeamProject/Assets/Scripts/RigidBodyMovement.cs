@@ -14,7 +14,7 @@ public class RigidBodyMovement : MonoBehaviour {
 	public LayerMask WhatisGround;
 
 	public GameObject AttackArea;
-	public GameObject DamageArea;
+	//public GameObject DamageArea;
 
 	public GameObject SoundMaker;
 
@@ -59,15 +59,18 @@ public class RigidBodyMovement : MonoBehaviour {
 
 		if (Input.GetMouseButton(0) || Input.GetKey(KeyCode.Return))
 		{
-			DamageArea.SetActive (false);
+		//	DamageArea.SetActive (false);
 			AttackArea.SetActive (true);
+			AttackArea.GetComponent<Attack>().charging = 1;
 			SoundMaker.GetComponent<SoundManager>().MakeSound();
 		}
 		
-		else
+		else if(Input.GetMouseButtonUp(0) || Input.GetKeyUp(KeyCode.Return))
 		{
-			AttackArea.SetActive (false);
-			DamageArea.SetActive (true);
+			AttackArea.GetComponent<Attack>().charging = 2;
+	//		AttackArea.GetComponent<Attack>().ResetSize();
+	//		AttackArea.SetActive (false);
+	//		DamageArea.SetActive (true);
 		}
 
 		if (Input.GetKeyDown (KeyCode.Space) && grounded) {

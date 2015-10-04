@@ -5,11 +5,14 @@ public class Attack : MonoBehaviour {
 
 	public GameObject SoundMaker;
 	public float growRate = 0.5f;
+	public float explodeRate = 10f;
 	public Transform _myTransform;
+	public int charging;
 
 	// Use this for initialization
 
 	void Start () {
+		charging = 0;
 		_myTransform = transform;
 		SoundMaker = GameObject.FindWithTag ("SoundManager");
 		transform.localScale = new Vector3 (10f,20f,10f);
@@ -17,19 +20,47 @@ public class Attack : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.localScale -= new Vector3 (0.5f, 0f, 0.5f);
-		if (transform.localScale.x < 0) {
-			transform.localScale = new Vector3(30f,20f,30f);
+		Debug.Log (charging);
+		if (charging == 0) {
+			MeshRenderer renderer = GetComponent<MeshRenderer> ();
+			Material material = renderer.material;
+			Color color = renderer.material.color;
+			color.a = 0.0f;
+			renderer.material.color = color;
+			gameObject.SetActive (false);
+		} else if (transform.localScale.x > 1 && charging == 1) {
+			MeshRenderer renderer = GetComponent<MeshRenderer> ();
+			Material material = renderer.material;
+			Color color = renderer.material.color;
+			if (color.a < 0.5f) {
+				color.a += 0.01f;
+			}
+			renderer.material.color = color;
+			transform.localScale -= new Vector3 (growRate, 0f, growRate);
+		} else if (transform.localScale.x < 10 && charging == 2) {
+			MeshRenderer renderer = GetComponent<MeshRenderer> ();
+			Material material = renderer.material;
+			Color color = renderer.material.color;
+			color.a = 0.5f;
+			renderer.material.color = color;
+			transform.localScale += new Vector3 (explodeRate, 0f, explodeRate);
+
 		}
+		else {
+
+			charging = 0;
+
+		}
+
 	}
 
-	public void Reset(){
-
+	public void ResetSize(){
+		transform.localScale = new Vector3 (10f, 20f, 10f);
 	}
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Rabbit")
+        if(other.gameObject.tag == "Rabbit" && charging == 2)
         {
 			SoundMaker.GetComponent<SoundManager>().HitOther();
 			other.gameObject.GetComponent<Rigidbody>().mass = 1;
@@ -38,13 +69,13 @@ public class Attack : MonoBehaviour {
            // Destroy(other.gameObject);
         }
 
-		if (other.gameObject.tag == "Explodable") {
+		if (other.gameObject.tag == "Explodable" && charging == 2) {
 			SoundMaker.GetComponent<SoundManager>().HitOther();
 			other.gameObject.GetComponent<Rigidbody>().mass = 1;
 			other.gameObject.GetComponent<Reactive>().aSplode = true;
 
 		}
-		if(other.gameObject.tag == "Cow")
+		if(other.gameObject.tag == "Cow" && charging == 2)
 		{
 			SoundMaker.GetComponent<SoundManager>().HitOther();
 			//other.gameObject.GetComponent<Rigidbody>().mass = 1;

@@ -10,7 +10,7 @@ public class MoveSide : MonoBehaviour {
 	public float jumpHeight = 8f;
 	public CollisionFlags _collisionFlags;
     public GameObject AttackArea;
-	public GameObject DamageArea;
+	//public GameObject DamageArea;
 
 
 	private Vector3 _moveDirection;
@@ -35,16 +35,16 @@ public class MoveSide : MonoBehaviour {
 
         if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Return))
         {
-			DamageArea.SetActive (false);
+		//	DamageArea.SetActive (false);
             AttackArea.SetActive (true);
         }
 
         else
         {
-            AttackArea.SetActive (false);
-			DamageArea.SetActive (true);
-        }
-        
+		AttackArea.GetComponent<Attack>().ResetSize();
+//			DamageArea.SetActive (true);
+       }
+       
 		
 		if (_controller.isGrounded) {
 			
