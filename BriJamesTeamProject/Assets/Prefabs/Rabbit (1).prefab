@@ -185,6 +185,7 @@ MonoBehaviour:
   maxXZ: 400
   minY: 200
   maxY: 400
+  timerTarget: 0
 --- !u!135 &13573046
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -234,7 +235,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9894177a4d0876a45a4e892290204a31, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4b68ed6c1976f3a4887880d8bf04868c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
@@ -247,6 +248,11 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4b68ed6c1976f3a4887880d8bf04868c,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 143734}
