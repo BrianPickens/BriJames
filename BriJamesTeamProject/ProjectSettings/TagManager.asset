@@ -11,6 +11,7 @@ TagManager:
   - SoundManager
   - Rabbit
   - Cow
+  - Grass
   layers:
   - Default
   - TransparentFX

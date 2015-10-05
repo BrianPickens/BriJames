@@ -17,6 +17,7 @@ public class RigidBodyMovement : MonoBehaviour {
 	//public GameObject DamageArea;
 
 	public GameObject SoundMaker;
+	public GameObject GrassSound;
 
 
 	void Awake(){
@@ -79,6 +80,25 @@ public class RigidBodyMovement : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.Space) && grounded) {
 			SoundMaker.GetComponent<SoundManager>().CharJump();
 			_myRigidbody.AddForce(Vector3.up * jumpForce);
+		}
+	}
+
+	void OnTriggerStay(Collider other){
+		if (other.gameObject.tag == "Grass") {
+			if(Mathf.Abs(Input.GetAxis ("Horizontal")) > 0 || Mathf.Abs(Input.GetAxis ("Vertical")) > 0){
+				Debug.Log ("Grass");
+				GrassSound.GetComponent<AudioSource>().volume = 0.25f;
+			}
+			else {
+				GrassSound.GetComponent<AudioSource>().volume = 0f;
+			}
+		}
+
+	}
+
+	void OnTriggerExit (Collider other){
+		if (other.gameObject.tag == "Grass") {
+			GrassSound.GetComponent<AudioSource>().volume = 0f;
 		}
 	}
 }

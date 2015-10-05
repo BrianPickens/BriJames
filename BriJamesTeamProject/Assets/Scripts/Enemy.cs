@@ -34,7 +34,7 @@ public class Enemy : MonoBehaviour {
 	void Update () {
 	
 
-		Debug.Log (_myRigidbody.velocity.z);
+		//Debug.Log (_myRigidbody.velocity.z);
 
 		anim.SetFloat ("WalkDirection", _myRigidbody.velocity.z);
 
