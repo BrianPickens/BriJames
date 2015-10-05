@@ -40,7 +40,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: .100000001
+  m_Volume: 1
   m_Pitch: 3
   Loop: 0
   Mute: 0
@@ -112,6 +112,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Beam: {fileID: 8300000, guid: 3a6d984ae66e7424981ae665afa5895e, type: 3}
   Hit: {fileID: 8300000, guid: cef90d86406a0c147afd6f7b04dc0d0f, type: 3}
+  Jump: {fileID: 8300000, guid: 3a6d984ae66e7424981ae665afa5895e, type: 3}
+  Land: {fileID: 8300000, guid: 9a5e670bcc86dee4293ba7ca5f6cf924, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

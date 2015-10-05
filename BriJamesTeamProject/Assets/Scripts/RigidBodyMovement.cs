@@ -36,6 +36,9 @@ public class RigidBodyMovement : MonoBehaviour {
 		int i = 0;
 		
 		if (i < hitColliders.Length) {
+			if(!grounded){
+			SoundMaker.GetComponent<SoundManager>().CharLand();
+			}
 			grounded = true;
 		} else {
 			grounded = false;
@@ -74,6 +77,7 @@ public class RigidBodyMovement : MonoBehaviour {
 		}
 
 		if (Input.GetKeyDown (KeyCode.Space) && grounded) {
+			SoundMaker.GetComponent<SoundManager>().CharJump();
 			_myRigidbody.AddForce(Vector3.up * jumpForce);
 		}
 	}
