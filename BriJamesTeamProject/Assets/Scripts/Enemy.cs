@@ -16,8 +16,11 @@ public class Enemy : MonoBehaviour {
     private float timer;
     public float timerTarget;
 
+	Animator anim;
+
 	// Use this for initialization
 	void Start () {
+		anim = GetComponentInChildren<Animator> ();
         timer = timerTarget;
 		gameObject.tag = "Rabbit";
 		deadAnim = true;
@@ -30,6 +33,10 @@ public class Enemy : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
+
+		Debug.Log (_myRigidbody.velocity.z);
+
+		anim.SetFloat ("WalkDirection", _myRigidbody.velocity.z);
 
 
 		if (Target != null && !dead) {
