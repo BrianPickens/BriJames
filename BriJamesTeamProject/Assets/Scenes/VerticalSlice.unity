@@ -4498,7 +4498,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 439642, guid: c12c3e8ed9f894c4e90536cc548b5375, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11480838, guid: c12c3e8ed9f894c4e90536cc548b5375, type: 2}
       propertyPath: jumpForce
@@ -4508,7 +4508,7 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: -1.5
       objectReference: {fileID: 0}
-    - target: {fileID: 21241140, guid: c12c3e8ed9f894c4e90536cc548b5375, type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 6ef8ac2620c54d54fa2a2b879daa955b,
@@ -4527,8 +4527,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 452054, guid: c12c3e8ed9f894c4e90536cc548b5375, type: 2}
       propertyPath: m_LocalPosition.y
-      value: .200000003
+      value: .109999999
       objectReference: {fileID: 0}
+    - target: {fileID: 2339132, guid: c12c3e8ed9f894c4e90536cc548b5375, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f7522db0c63e8394998fcbbabbc4710c, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c12c3e8ed9f894c4e90536cc548b5375, type: 2}
   m_IsPrefabParent: 0
