@@ -3,7 +3,7 @@ using System.Collections;
 
 public class NPCscript : MonoBehaviour {
 
-	public GameObject Dialogue;
+//	public GameObject Dialogue;
 
 	// Use this for initialization
 	void Start () {
@@ -19,7 +19,7 @@ public class NPCscript : MonoBehaviour {
 
 		if(Input.GetKeyDown(KeyCode.Space)){
 			if (other.gameObject.tag == "Player") {
-				Dialogue.SetActive (true);
+		//		Dialogue.SetActive (true);
 			}
 		}
 	}
