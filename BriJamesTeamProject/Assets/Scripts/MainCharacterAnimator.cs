@@ -4,11 +4,12 @@ using System.Collections;
 public class MainCharacterAnimator : MonoBehaviour {
 
 	Animator anim;
-
+	GameObject Player;
 
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator> ();
+		Player = GameObject.FindWithTag ("Player");
 	}
 	
 	// Update is called once per frame
@@ -41,6 +42,14 @@ public class MainCharacterAnimator : MonoBehaviour {
 		}
 		if (Input.GetKeyUp (KeyCode.S)) {
 			anim.SetBool ("Front", false);
+		}
+
+		if (Player.GetComponent<RigidBodyMovement> ().grounded) {
+			anim.SetBool ("jump", false);
+		}
+
+		if (!Player.GetComponent<RigidBodyMovement> ().grounded) {
+			anim.SetBool ("jump", true);
 		}
 
 
