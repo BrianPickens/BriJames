@@ -166,10 +166,10 @@ MonoBehaviour:
   _myRigidbody: {fileID: 0}
   dead: 0
   deadAnim: 0
-  minXZ: -400
-  maxXZ: 400
-  minY: 200
-  maxY: 400
+  minXZ: -800
+  maxXZ: 800
+  minY: 300
+  maxY: 800
   timerTarget: 0
 --- !u!135 &13573046
 SphereCollider:
@@ -241,6 +241,22 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_Mass
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: minXZ
+      value: -800
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: maxXZ
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: minY
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: maxY
+      value: 800
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
