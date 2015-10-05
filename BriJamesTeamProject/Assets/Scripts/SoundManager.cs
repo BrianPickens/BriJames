@@ -19,7 +19,7 @@ public class SoundManager : MonoBehaviour {
 	}
 
 	public void MakeSound(){
-		GetComponent<AudioSource> ().volume = 0.4f;
+		GetComponent<AudioSource> ().volume = 0.25f;
 		this.GetComponent<AudioSource> ().PlayOneShot (Beam);
 	}
 
