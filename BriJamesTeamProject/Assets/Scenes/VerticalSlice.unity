@@ -2538,7 +2538,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400992, guid: ce431e0afdf3ec44e8381298e4c69d34, type: 2}
       propertyPath: walkDistance
-      value: -18
+      value: -12
       objectReference: {fileID: 0}
     - target: {fileID: 2015452, guid: ce431e0afdf3ec44e8381298e4c69d34, type: 2}
       propertyPath: m_BackGroundColor.r
@@ -2551,6 +2551,10 @@ Prefab:
     - target: {fileID: 2015452, guid: ce431e0afdf3ec44e8381298e4c69d34, type: 2}
       propertyPath: m_BackGroundColor.b
       value: .980392158
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400992, guid: ce431e0afdf3ec44e8381298e4c69d34, type: 2}
+      propertyPath: height
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ce431e0afdf3ec44e8381298e4c69d34, type: 2}
