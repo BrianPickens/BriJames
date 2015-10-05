@@ -81,7 +81,7 @@ GameObject:
   - 54: {fileID: 5469084}
   - 82: {fileID: 8295858}
   m_Layer: 0
-  m_Name: PlayerCharacter
+  m_Name: old Player character
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
