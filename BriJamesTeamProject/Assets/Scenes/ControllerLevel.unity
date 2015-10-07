@@ -130,6 +130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &39275693
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -294,6 +295,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &67094107
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -409,6 +411,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &70837412
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -512,6 +515,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &72174138
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -615,6 +619,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &73872437
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -795,6 +800,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &81867188
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -898,6 +904,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &87955168
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1031,6 +1038,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &100308938
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1207,6 +1215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &119634965
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1322,6 +1331,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &122313237
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1425,6 +1435,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &125474145
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1520,7 +1531,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 443346, guid: 92a92052ea5c03549a0420995148cb13, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 143734, guid: 92a92052ea5c03549a0420995148cb13, type: 2}
       propertyPath: m_Name
@@ -1574,6 +1585,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &151636883
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1750,6 +1762,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &158653737
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1920,6 +1933,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &164821845
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2023,6 +2037,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &169947977
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2126,6 +2141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &175487339
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2283,6 +2299,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &181538866
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2386,6 +2403,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &183193143
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2477,6 +2495,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &207494332
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2592,6 +2611,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &214697398
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2769,6 +2789,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &238297867
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2945,6 +2966,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &258173362
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3048,6 +3070,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &266966384
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3143,7 +3166,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 443346, guid: 92a92052ea5c03549a0420995148cb13, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 143734, guid: 92a92052ea5c03549a0420995148cb13, type: 2}
       propertyPath: m_Name
@@ -3197,6 +3220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &270100439
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3300,6 +3324,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &282283960
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3463,6 +3488,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &316284819
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3566,6 +3592,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &335909022
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3661,7 +3688,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 443346, guid: 92a92052ea5c03549a0420995148cb13, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 143734, guid: 92a92052ea5c03549a0420995148cb13, type: 2}
       propertyPath: m_Name
@@ -3715,6 +3742,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &351257733
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3864,6 +3892,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &368096389
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3959,7 +3988,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 443346, guid: 92a92052ea5c03549a0420995148cb13, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 143734, guid: 92a92052ea5c03549a0420995148cb13, type: 2}
       propertyPath: m_Name
@@ -4013,6 +4042,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &390693068
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4116,6 +4146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &394368734
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4219,6 +4250,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &396229205
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4322,6 +4354,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &408685585
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4425,6 +4458,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &409288394
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4520,7 +4554,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 443346, guid: 92a92052ea5c03549a0420995148cb13, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 143734, guid: 92a92052ea5c03549a0420995148cb13, type: 2}
       propertyPath: m_Name
@@ -4574,6 +4608,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &427588079
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4677,6 +4712,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &434651120
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4780,6 +4816,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &449982083
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4883,6 +4920,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &453231341
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4986,6 +5024,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &456384608
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5162,6 +5201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &510067858
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5253,6 +5293,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &513049119
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5427,6 +5468,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!1 &525726703
 GameObject:
   m_ObjectHideFlags: 0
@@ -5472,6 +5514,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &525726706
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5575,6 +5618,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &546959471
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5670,7 +5714,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 443346, guid: 92a92052ea5c03549a0420995148cb13, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 143734, guid: 92a92052ea5c03549a0420995148cb13, type: 2}
       propertyPath: m_Name
@@ -5724,6 +5768,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &620381359
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5815,6 +5860,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &622174798
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6004,6 +6050,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &638677413
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6107,6 +6154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &675426879
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6301,6 +6349,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &707802091
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6408,7 +6457,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 443346, guid: 92a92052ea5c03549a0420995148cb13, type: 2}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 143734, guid: 92a92052ea5c03549a0420995148cb13, type: 2}
       propertyPath: m_Name
@@ -6462,6 +6511,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &717222086
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6565,6 +6615,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &732098182
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6668,6 +6719,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &747299596
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6844,6 +6896,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &756968720
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6947,6 +7000,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &762063851
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7050,6 +7104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &782151921
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7145,7 +7200,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 443346, guid: 92a92052ea5c03549a0420995148cb13, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 143734, guid: 92a92052ea5c03549a0420995148cb13, type: 2}
       propertyPath: m_Name
@@ -7199,6 +7254,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &795365130
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7376,6 +7432,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &818484612
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7471,7 +7528,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 443346, guid: 92a92052ea5c03549a0420995148cb13, type: 2}
       propertyPath: m_RootOrder
-      value: 21
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 92a92052ea5c03549a0420995148cb13, type: 2}
@@ -7521,6 +7578,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &826263403
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7678,6 +7736,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &852921400
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7769,6 +7828,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &862124636
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7872,6 +7932,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &868728263
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7987,6 +8048,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &882817640
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8090,6 +8152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &894609183
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8193,6 +8256,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &894889571
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8296,6 +8360,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &895193527
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8472,6 +8537,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &897448388
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8567,7 +8633,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 443346, guid: 92a92052ea5c03549a0420995148cb13, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 143734, guid: 92a92052ea5c03549a0420995148cb13, type: 2}
       propertyPath: m_Name
@@ -8621,6 +8687,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &922695083
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8712,6 +8779,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &960472356
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8827,6 +8895,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &990713941
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8988,6 +9057,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!1 &1014077196
 GameObject:
   m_ObjectHideFlags: 0
@@ -9112,6 +9182,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1028343862
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9218,6 +9289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!23 &1028847051
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9319,6 +9391,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1032744014
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9422,6 +9495,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1034887390
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9525,6 +9599,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1045236285
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9628,6 +9703,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1052232298
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9798,6 +9874,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1059138316
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9901,6 +9978,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1090557755
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9996,7 +10074,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 443346, guid: 92a92052ea5c03549a0420995148cb13, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 143734, guid: 92a92052ea5c03549a0420995148cb13, type: 2}
       propertyPath: m_Name
@@ -10042,7 +10120,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 443346, guid: 92a92052ea5c03549a0420995148cb13, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 143734, guid: 92a92052ea5c03549a0420995148cb13, type: 2}
       propertyPath: m_Name
@@ -10084,6 +10162,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1112317809
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10337,7 +10416,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 443346, guid: 92a92052ea5c03549a0420995148cb13, type: 2}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 143734, guid: 92a92052ea5c03549a0420995148cb13, type: 2}
       propertyPath: m_Name
@@ -10379,6 +10458,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1174924696
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10494,6 +10574,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1180761951
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10597,6 +10678,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1183144896
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10730,6 +10812,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1192666828
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10876,6 +10959,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1201188177
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10936,6 +11020,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1201259972
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11039,6 +11124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1203181383
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11142,6 +11228,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1205016874
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11245,6 +11332,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1206395708
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11348,6 +11436,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1228909747
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11493,6 +11582,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1263117651
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11611,6 +11701,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1274301384
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11714,6 +11805,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1285546585
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11902,6 +11994,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1295358916
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12005,6 +12098,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1301378249
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12108,6 +12202,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1323479776
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12211,6 +12306,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1337370365
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12314,6 +12410,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1371761613
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12611,6 +12708,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1403249295
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12714,6 +12812,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1405064046
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12805,6 +12904,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1423181455
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12920,6 +13020,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1427023932
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13212,7 +13313,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 443346, guid: 92a92052ea5c03549a0420995148cb13, type: 2}
       propertyPath: m_RootOrder
-      value: 16
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 143734, guid: 92a92052ea5c03549a0420995148cb13, type: 2}
       propertyPath: m_Name
@@ -13325,6 +13426,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!1 &1470311079
 GameObject:
   m_ObjectHideFlags: 0
@@ -13370,6 +13472,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1470311082
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13461,6 +13564,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1485114522
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13579,6 +13683,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!23 &1507092423
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13753,6 +13858,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1533893705
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13883,7 +13989,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 443346, guid: 92a92052ea5c03549a0420995148cb13, type: 2}
       propertyPath: m_RootOrder
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 143734, guid: 92a92052ea5c03549a0420995148cb13, type: 2}
       propertyPath: m_Name
@@ -13937,6 +14043,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1554632593
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14188,6 +14295,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1576296928
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14291,6 +14399,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1599926331
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14394,6 +14503,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1605476821
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14497,6 +14607,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1622493322
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14600,6 +14711,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1630575693
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14703,6 +14815,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1663439658
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14806,6 +14919,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1685372356
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15060,6 +15174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1695825024
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15163,6 +15278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1700034715
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15266,6 +15382,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1717632846
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15369,6 +15486,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1744922539
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15472,6 +15590,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1745109649
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15567,7 +15686,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 443346, guid: 92a92052ea5c03549a0420995148cb13, type: 2}
       propertyPath: m_RootOrder
-      value: 19
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 143734, guid: 92a92052ea5c03549a0420995148cb13, type: 2}
       propertyPath: m_Name
@@ -15680,6 +15799,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!1 &1832821873
 GameObject:
   m_ObjectHideFlags: 0
@@ -15725,6 +15845,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1832821876
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15870,6 +15991,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1870925675
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16046,6 +16168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1882981078
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16149,6 +16272,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1883143221
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16252,6 +16376,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1884798636
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16343,6 +16468,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1887058327
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16458,6 +16584,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1888375032
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16561,6 +16688,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1916709396
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16867,6 +16995,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!1 &1953191959
 GameObject:
   m_ObjectHideFlags: 0
@@ -16985,6 +17114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1963744183
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17088,6 +17218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1977403361
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17191,6 +17322,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1985788651
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17294,6 +17426,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1989660371
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17385,6 +17518,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &1999658915
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17488,6 +17622,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &2002036419
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17595,7 +17730,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 443346, guid: 92a92052ea5c03549a0420995148cb13, type: 2}
       propertyPath: m_RootOrder
-      value: 17
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 143734, guid: 92a92052ea5c03549a0420995148cb13, type: 2}
       propertyPath: m_Name
@@ -17649,6 +17784,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &2020775320
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17752,6 +17888,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &2022488278
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17843,6 +17980,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &2026537940
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18031,6 +18169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &2032520091
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18134,6 +18273,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &2067751120
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18237,6 +18377,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &2075004116
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18340,6 +18481,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &2075048264
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18431,6 +18573,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &2081616288
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18546,6 +18689,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &2092056348
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18649,6 +18793,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &2095575099
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18752,6 +18897,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &2096407088
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18847,7 +18993,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 443346, guid: 92a92052ea5c03549a0420995148cb13, type: 2}
       propertyPath: m_RootOrder
-      value: 18
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 143734, guid: 92a92052ea5c03549a0420995148cb13, type: 2}
       propertyPath: m_Name
@@ -18889,6 +19035,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &2131146653
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19077,6 +19224,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _myRigidbody: {fileID: 0}
   aSplode: 0
+  explodable: 0
 --- !u!54 &2137842376
 Rigidbody:
   m_ObjectHideFlags: 0

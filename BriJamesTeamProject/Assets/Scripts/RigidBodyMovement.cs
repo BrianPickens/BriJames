@@ -86,7 +86,6 @@ public class RigidBodyMovement : MonoBehaviour {
 	void OnTriggerStay(Collider other){
 		if (other.gameObject.tag == "Grass") {
 			if(Mathf.Abs(Input.GetAxis ("Horizontal")) > 0 || Mathf.Abs(Input.GetAxis ("Vertical")) > 0){
-				Debug.Log ("Grass");
 				GrassSound.GetComponent<AudioSource>().volume = 0.25f;
 			}
 			else {

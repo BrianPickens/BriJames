@@ -9,17 +9,21 @@ public class Enemy : MonoBehaviour {
 	public Rigidbody _myRigidbody;
 	public bool dead;
 	public bool deadAnim = true;
-	public float minXZ = -400f;
-	public float maxXZ = 400f;
-	public float minY = 200f;
-	public float maxY = 400f;
+	public float baseXZ = 400f;
+	public float baseY = 200f;
+	public float baseMaxY = 400f;
+	public float incrementXZ = 200f;
+	public float incrementY = 200f;
     private float timer;
     public float timerTarget;
+	public bool explodable;
+	public int charge;
 
 	Animator anim;
 
 	// Use this for initialization
 	void Start () {
+		explodable = true;
 		anim = GetComponentInChildren<Animator> ();
         timer = timerTarget;
 		gameObject.tag = "Rabbit";
@@ -32,9 +36,6 @@ public class Enemy : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
-
-		//Debug.Log (_myRigidbody.velocity.z);
 
 		anim.SetFloat ("WalkDirection", _myRigidbody.velocity.z);
 
@@ -46,7 +47,31 @@ public class Enemy : MonoBehaviour {
 		}
 
 		if (!deadAnim) {
-			Vector3 deadFly = new Vector3(Random.Range(minXZ,maxXZ),Random.Range(minY, maxY),Random.Range(minXZ,maxXZ));
+			float XZ = 0;
+			float Y = 0;
+			switch (charge){
+			case 1:
+				XZ = incrementXZ * 1;
+				Y = incrementY * 1;
+				//incrementY = 
+				break;
+
+			case 2:
+				XZ = incrementXZ * 2;
+				Y = incrementY * 2;
+				break;
+
+			case 3:
+				XZ = incrementXZ * 3;
+				Y = incrementY * 3;
+				break;
+
+			case 4:
+				XZ = incrementXZ * 4;
+				Y = incrementY * 4;
+				break;
+			}
+			Vector3 deadFly = new Vector3(Random.Range(-baseXZ - XZ, baseXZ + XZ),Random.Range(baseY + Y, baseMaxY + Y),Random.Range(-baseXZ - XZ, baseXZ + XZ));
 			_myRigidbody.AddForce(deadFly);
 			deadAnim = true;
 		}
@@ -58,6 +83,7 @@ public class Enemy : MonoBehaviour {
             {
                 dead = false;
                 timer = timerTarget;
+				explodable = true;
             }
         }
 	

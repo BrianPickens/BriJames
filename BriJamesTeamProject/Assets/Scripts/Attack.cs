@@ -8,10 +8,12 @@ public class Attack : MonoBehaviour {
 	public float explodeRate = 10f;
 	public Transform _myTransform;
 	public int charging;
+	public int chargePower;
 
 	// Use this for initialization
 
 	void Start () {
+		chargePower = 0;
 		charging = 0;
 		_myTransform = transform;
 		SoundMaker = GameObject.FindWithTag ("SoundManager");
@@ -20,7 +22,7 @@ public class Attack : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		//Debug.Log (charging);
+		Debug.Log (chargePower);
 		if (charging == 0) {
 			MeshRenderer renderer = GetComponent<MeshRenderer> ();
 			Material material = renderer.material;
@@ -37,6 +39,18 @@ public class Attack : MonoBehaviour {
 			}
 			renderer.material.color = color;
 			transform.localScale -= new Vector3 (growRate, 0f, growRate);
+			if(transform.localScale.x < 10){
+				chargePower = 1;
+			}
+			if(transform.localScale.x < 7){
+				chargePower = 2;
+			}
+			if(transform.localScale.x < 5){
+				chargePower = 3;
+			}
+			if(transform.localScale.x < 3){
+				chargePower = 4;
+			}
 		} else if (transform.localScale.x < 10 && charging == 2) {
 //			MeshRenderer renderer = GetComponent<MeshRenderer> ();
 //			Material material = renderer.material;
@@ -58,21 +72,28 @@ public class Attack : MonoBehaviour {
 		transform.localScale = new Vector3 (10f, 20f, 10f);
 	}
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerStay(Collider other)
     {
         if(other.gameObject.tag == "Rabbit" && charging == 2)
         {
+			if(other.gameObject.GetComponent<Enemy>().explodable){
+			other.gameObject.GetComponent<Enemy>().explodable = false;
+			other.gameObject.GetComponent<Enemy>().charge = chargePower;
 			SoundMaker.GetComponent<SoundManager>().HitOther();
 			other.gameObject.GetComponent<Rigidbody>().mass = 1;
 			other.gameObject.GetComponent<Enemy>().dead = true;
 			other.gameObject.GetComponent<Enemy>().deadAnim = false;
+			}
            // Destroy(other.gameObject);
         }
 
 		if (other.gameObject.tag == "Explodable" && charging == 2) {
+			if(other.gameObject.GetComponent<Reactive>().explodable){
+			other.gameObject.GetComponent<Reactive>().explodable = false;
 			SoundMaker.GetComponent<SoundManager>().HitOther();
 			other.gameObject.GetComponent<Rigidbody>().mass = 1;
 			other.gameObject.GetComponent<Reactive>().aSplode = true;
+			}
 
 		}
 		if(other.gameObject.tag == "Cow" && charging == 2)

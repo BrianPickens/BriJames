@@ -26,6 +26,7 @@ GameObject:
   - 212: {fileID: 21226660}
   - 95: {fileID: 9566520}
   - 114: {fileID: 11458640}
+  - 114: {fileID: 11421852}
   m_Layer: 0
   m_Name: MCsprite
   m_TagString: Untagged
@@ -155,7 +156,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 173794}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21.4917793, y: 2.80999994, z: -.398097783}
+  m_LocalPosition: {x: -20.7729359, y: 280.109985, z: -3.17935705}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 407294}
@@ -333,7 +334,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 0cbfe4f4ca6ad4e4f96682b0ae4f53b9, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -512,6 +513,17 @@ MonoBehaviour:
   explodeRate: 1
   _myTransform: {fileID: 0}
   charging: 0
+--- !u!114 &11421852
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 116894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 572cbb5cae95cac46b6c87dae605d491, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11452698
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -534,7 +546,7 @@ MonoBehaviour:
     m_Bits: 256
   AttackArea: {fileID: 187060}
   SoundMaker: {fileID: 0}
-  GrassSound: {fileID: 0}
+  GrassSound: {fileID: 156196}
 --- !u!114 &11458640
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -170,7 +170,8 @@ MonoBehaviour:
   maxXZ: 800
   minY: 300
   maxY: 800
-  timerTarget: 0
+  timerTarget: 3
+  explodable: 0
 --- !u!135 &13573046
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -257,6 +258,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: maxY
       value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: timerTarget
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
