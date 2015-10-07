@@ -90,6 +90,7 @@ public class Attack : MonoBehaviour {
 		if (other.gameObject.tag == "Explodable" && charging == 2) {
 			if(other.gameObject.GetComponent<Reactive>().explodable){
 			other.gameObject.GetComponent<Reactive>().explodable = false;
+			other.gameObject.GetComponent<Reactive>().charge = chargePower;
 			SoundMaker.GetComponent<SoundManager>().HitOther();
 			other.gameObject.GetComponent<Rigidbody>().mass = 1;
 			other.gameObject.GetComponent<Reactive>().aSplode = true;

@@ -47,8 +47,8 @@ public class Enemy : MonoBehaviour {
 		}
 
 		if (!deadAnim) {
-			float XZ = 0;
-			float Y = 0;
+			float XZ = 1;
+			float Y = 1;
 			switch (charge){
 			case 1:
 				XZ = incrementXZ * 1;
