@@ -12,6 +12,8 @@ TagManager:
   - Rabbit
   - Cow
   - Grass
+  - Collide
+  - Ground
   layers:
   - Default
   - TransparentFX
