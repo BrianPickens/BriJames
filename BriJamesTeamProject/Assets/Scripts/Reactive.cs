@@ -2,12 +2,17 @@
 using System.Collections;
 
 [RequireComponent (typeof (Rigidbody))]
+[RequireComponent (typeof (AudioSource))]
 
 public class Reactive : MonoBehaviour {
 
-
+	public AudioClip hit;
+	AudioSource audio;
 	public Rigidbody _myRigidbody;
 	public bool aSplode;
+
+	private float crashTimer;
+	private bool ableToCrash;
 
 	private float timer;
 	private float timerTarget = 0.5f;
@@ -21,13 +26,15 @@ public class Reactive : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		audio = GetComponent<AudioSource> ();
+		crashTimer = 1f;
 		baseXZ = baseXZ;
 		explodable = true;
 		timer = timerTarget;
 		aSplode = false;
 		_myRigidbody = GetComponent<Rigidbody> ();
 	//	_myRigidbody.freezeRotation = true;
-	
+		//audio.rolloffMode(linear);
 		gameObject.tag = "Explodable";
 	
 	}
@@ -73,7 +80,32 @@ public class Reactive : MonoBehaviour {
 			aSplode = false;
 		}
 
+		if (!ableToCrash) {
+			crashTimer -= Time.deltaTime;
+			if(crashTimer < 0){
+				ableToCrash = true;
+				crashTimer = 1f;
+			}
+		}
 
 	
+	}
+
+	void OnCollisionEnter (Collision collision){
+		
+		if (collision.gameObject.tag == "Explodable" && ableToCrash) {
+			if(collision.relativeVelocity.magnitude > 5){
+			audio.pitch = Random.Range(0.8f, 1.2f);
+			audio.PlayOneShot(hit);
+				ableToCrash = false;
+			}
+		}
+		
+		if (collision.gameObject.tag == "Ground") {
+			if(collision.relativeVelocity.magnitude > 5){
+			audio.pitch = Random.Range(0.8f, 1.2f);
+			audio.PlayOneShot(hit);
+			}
+		}
 	}
 }
