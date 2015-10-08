@@ -3283,6 +3283,10 @@ Prefab:
       propertyPath: height
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 8110080, guid: ce431e0afdf3ec44e8381298e4c69d34, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ce431e0afdf3ec44e8381298e4c69d34, type: 2}
   m_IsPrefabParent: 0
@@ -6439,6 +6443,10 @@ Prefab:
       propertyPath: GrassSound
       value: 
       objectReference: {fileID: 636026467}
+    - target: {fileID: 8291664, guid: 05db23b63b5ca9d46bf9e508b0f55796, type: 2}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 05db23b63b5ca9d46bf9e508b0f55796, type: 2}
   m_IsPrefabParent: 0
@@ -8184,6 +8192,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1910758778}
   m_RootOrder: 0
+--- !u!1 &1422811270 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 173794, guid: 05db23b63b5ca9d46bf9e508b0f55796, type: 2}
+  m_PrefabInternal: {fileID: 1059015523}
+--- !u!81 &1422811271
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1422811270}
+  m_Enabled: 1
 --- !u!1001 &1431027205
 Prefab:
   m_ObjectHideFlags: 0
