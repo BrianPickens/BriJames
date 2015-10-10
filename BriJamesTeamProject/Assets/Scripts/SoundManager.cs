@@ -7,6 +7,7 @@ public class SoundManager : MonoBehaviour {
 	public AudioClip Hit;
 	public AudioClip Jump;
 	public AudioClip Land;
+	public AudioClip BeamRelease;
 
 	// Use this for initialization
 	void Start () {
@@ -19,22 +20,26 @@ public class SoundManager : MonoBehaviour {
 	}
 
 	public void MakeSound(){
-		GetComponent<AudioSource> ().volume = 0.2f;
+
 		this.GetComponent<AudioSource> ().PlayOneShot (Beam);
 	}
 
 	public void HitOther(){
-		GetComponent<AudioSource> ().volume = 1f;
+
 		this.GetComponent<AudioSource> ().PlayOneShot (Hit);
 	}
 
 	public void CharJump(){
-		GetComponent<AudioSource> ().volume = 1f;
+
 		this.GetComponent<AudioSource> ().PlayOneShot (Jump);
 	}
 
 	public void CharLand(){
-		GetComponent<AudioSource> ().volume = 1f;
+
 		this.GetComponent<AudioSource> ().PlayOneShot (Land);
+	}
+
+	public void Release(){
+		this.GetComponent<AudioSource> ().PlayOneShot (BeamRelease);
 	}
 }

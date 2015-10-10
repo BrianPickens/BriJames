@@ -73,13 +73,16 @@ public class RigidBodyMovement : MonoBehaviour {
 
 	void Update () {
 
+		if (Input.GetMouseButtonDown (0) || Input.GetKeyDown (KeyCode.Return)) {
+			SoundMaker.GetComponent<SoundManager> ().MakeSound ();
+		}
 
 		if (Input.GetMouseButton (0) || Input.GetKey (KeyCode.Return)) {
 			AttackArea.SetActive (true);
 			AttackArea.GetComponent<Attack> ().charging = 1;
 			ChargeLight.intensity += 0.10f;
 			SunLight.GetComponent<Light> ().intensity -= 0.01f;
-			SoundMaker.GetComponent<SoundManager> ().MakeSound ();
+
 
 
 			Color lerpcolor = Color.Lerp(color1, color2, t);
@@ -90,6 +93,7 @@ public class RigidBodyMovement : MonoBehaviour {
 			camera.backgroundColor = lerpcolor;
 		} else if (Input.GetMouseButtonUp (0) || Input.GetKeyUp (KeyCode.Return)) {
 			AttackArea.GetComponent<Attack> ().charging = 2;
+			SoundMaker.GetComponent<SoundManager> ().Release ();
 			ChargeLight.intensity = 0f;
 			camera.backgroundColor = color1;
 			t = 0f;
