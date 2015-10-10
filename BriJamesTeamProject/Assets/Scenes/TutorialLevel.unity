@@ -2283,7 +2283,7 @@ GameObject:
   - 108: {fileID: 298940406}
   m_Layer: 0
   m_Name: Directional light
-  m_TagString: Untagged
+  m_TagString: Sun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6445,6 +6445,10 @@ Prefab:
       objectReference: {fileID: 636026467}
     - target: {fileID: 8291664, guid: 05db23b63b5ca9d46bf9e508b0f55796, type: 2}
       propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 173794, guid: 05db23b63b5ca9d46bf9e508b0f55796, type: 2}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

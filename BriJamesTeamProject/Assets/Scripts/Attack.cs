@@ -22,7 +22,7 @@ public class Attack : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Debug.Log (chargePower);
+		//Debug.Log (chargePower);
 		if (charging == 0) {
 			MeshRenderer renderer = GetComponent<MeshRenderer> ();
 			Material material = renderer.material;

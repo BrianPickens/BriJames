@@ -23,7 +23,8 @@ public class RigidBodyMovement : MonoBehaviour {
 	public Color color1;
 	public Color color2;
 	public Camera camera;
-	private float duration = 0.5f;
+	private float duration = 2f;
+	private float t;
 
 
 	void Awake(){
@@ -72,23 +73,34 @@ public class RigidBodyMovement : MonoBehaviour {
 
 	void Update () {
 
+
 		if (Input.GetMouseButton (0) || Input.GetKey (KeyCode.Return)) {
 			AttackArea.SetActive (true);
 			AttackArea.GetComponent<Attack> ().charging = 1;
 			ChargeLight.intensity += 0.10f;
 			SunLight.GetComponent<Light> ().intensity -= 0.01f;
 			SoundMaker.GetComponent<SoundManager> ().MakeSound ();
-			float t = Mathf.PingPong(Time.time, duration) / duration;
-			camera.backgroundColor = Color.Lerp(color2, color1, t);
+
+
+			Color lerpcolor = Color.Lerp(color1, color2, t);
+			if( t < 1){
+				t += Time.deltaTime/duration;
+			}
+
+			camera.backgroundColor = lerpcolor;
 		} else if (Input.GetMouseButtonUp (0) || Input.GetKeyUp (KeyCode.Return)) {
 			AttackArea.GetComponent<Attack> ().charging = 2;
 			ChargeLight.intensity = 0f;
 			camera.backgroundColor = color1;
+			t = 0f;
+			SunLight.GetComponent<Light>().intensity = 8;
 
 		} else {
-			if (SunLight.GetComponent<Light> ().intensity < 0.9f) {
-				SunLight.GetComponent<Light> ().intensity += 0.1f;
+			if (SunLight.GetComponent<Light> ().intensity > 1.25f) {
+				SunLight.GetComponent<Light> ().intensity -= 0.25f;
 			}
+
+		//	camera.backgroundColor = Color.Lerp(camera.backgroundColor, color1, Time.time * 0.25f);
 
 		}
 

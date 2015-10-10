@@ -18,11 +18,11 @@ public class Reactive : MonoBehaviour {
 	private float timerTarget = 0.5f;
 	public bool explodable;
 	public int charge;
-	private float baseXZ = 200f;
-	private float baseY = 200f;
-	private float baseMaxY = 400f;
-	private float incrementXZ = 100f;
-	private float incrementY = 100f;
+	private float baseXZ = 1;
+	private float baseY = 1f;
+	private float baseMaxY = 5f;
+	private float incrementXZ = 200f;
+	private float incrementY = 200f;
 
 	// Use this for initialization
 	void Start () {
@@ -55,14 +55,14 @@ public class Reactive : MonoBehaviour {
 			float Y = 1;
 			switch (charge){
 			case 1:
-				XZ = incrementXZ * 1;
+				XZ = incrementXZ * 1f;
 				Y = incrementY * 1;
 				//incrementY = 
 				break;
 				
 			case 2:
-				XZ = incrementXZ * 2;
-				Y = incrementY * 2;
+				XZ = incrementXZ * 2f;
+				Y = incrementY * 2f;
 				break;
 				
 			case 3:
