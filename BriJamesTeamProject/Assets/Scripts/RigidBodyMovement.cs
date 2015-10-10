@@ -18,10 +18,21 @@ public class RigidBodyMovement : MonoBehaviour {
 
 	public GameObject SoundMaker;
 	public GameObject GrassSound;
+	private Light ChargeLight;
+	public GameObject SunLight;
+	public Color color1;
+	public Color color2;
+	public Camera camera;
+	private float duration = 0.5f;
 
 
 	void Awake(){
 		SoundMaker = GameObject.FindWithTag ("SoundManager");
+		ChargeLight = this.GetComponent<Light>();
+		SunLight = GameObject.FindWithTag ("Sun");
+		camera = Camera.main;
+		color1 = camera.backgroundColor;
+		color2 = Color.black;
 		_myRigidbody = this.GetComponent<Rigidbody> ();
 	}
 
@@ -61,20 +72,24 @@ public class RigidBodyMovement : MonoBehaviour {
 
 	void Update () {
 
-		if (Input.GetMouseButton(0) || Input.GetKey(KeyCode.Return))
-		{
-		//	DamageArea.SetActive (false);
+		if (Input.GetMouseButton (0) || Input.GetKey (KeyCode.Return)) {
 			AttackArea.SetActive (true);
-			AttackArea.GetComponent<Attack>().charging = 1;
-			SoundMaker.GetComponent<SoundManager>().MakeSound();
-		}
-		
-		else if(Input.GetMouseButtonUp(0) || Input.GetKeyUp(KeyCode.Return))
-		{
-			AttackArea.GetComponent<Attack>().charging = 2;
-	//		AttackArea.GetComponent<Attack>().ResetSize();
-	//		AttackArea.SetActive (false);
-	//		DamageArea.SetActive (true);
+			AttackArea.GetComponent<Attack> ().charging = 1;
+			ChargeLight.intensity += 0.10f;
+			SunLight.GetComponent<Light> ().intensity -= 0.01f;
+			SoundMaker.GetComponent<SoundManager> ().MakeSound ();
+			float t = Mathf.PingPong(Time.time, duration) / duration;
+			camera.backgroundColor = Color.Lerp(color2, color1, t);
+		} else if (Input.GetMouseButtonUp (0) || Input.GetKeyUp (KeyCode.Return)) {
+			AttackArea.GetComponent<Attack> ().charging = 2;
+			ChargeLight.intensity = 0f;
+			camera.backgroundColor = color1;
+
+		} else {
+			if (SunLight.GetComponent<Light> ().intensity < 0.9f) {
+				SunLight.GetComponent<Light> ().intensity += 0.1f;
+			}
+
 		}
 
 		if (Input.GetKeyDown (KeyCode.Space) && grounded) {

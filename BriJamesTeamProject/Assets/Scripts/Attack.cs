@@ -17,7 +17,7 @@ public class Attack : MonoBehaviour {
 		charging = 0;
 		_myTransform = transform;
 		SoundMaker = GameObject.FindWithTag ("SoundManager");
-		transform.localScale = new Vector3 (10f,20f,10f);
+		transform.localScale = new Vector3 (10f,10f,10f);
 	}
 	
 	// Update is called once per frame
@@ -38,7 +38,8 @@ public class Attack : MonoBehaviour {
 				color.a += 0.005f;
 			}
 			renderer.material.color = color;
-			transform.localScale -= new Vector3 (growRate, 0f, growRate);
+			transform.Rotate(5,5,5);
+			transform.localScale -= new Vector3 (growRate, growRate, growRate);
 			if(transform.localScale.x < 10){
 				chargePower = 1;
 			}
@@ -57,7 +58,7 @@ public class Attack : MonoBehaviour {
 //			Color color = renderer.material.color;
 //			color.a = 0.5f;
 //			renderer.material.color = color;
-			transform.localScale += new Vector3 (explodeRate, 0f, explodeRate);
+			transform.localScale += new Vector3 (explodeRate, explodeRate, explodeRate);
 
 		}
 		else {
