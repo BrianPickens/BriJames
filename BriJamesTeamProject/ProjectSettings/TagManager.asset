@@ -16,6 +16,7 @@ TagManager:
   - Ground
   - ChargeLight
   - Sun
+  - StarterBlock
   layers:
   - Default
   - TransparentFX

@@ -25,6 +25,7 @@ public class RigidBodyMovement : MonoBehaviour {
 	public Camera camera;
 	private float duration = 2f;
 	private float t;
+	public bool gameStart;
 
 
 	void Awake(){
@@ -34,6 +35,7 @@ public class RigidBodyMovement : MonoBehaviour {
 		camera = Camera.main;
 		color1 = camera.backgroundColor;
 		color2 = Color.black;
+		gameStart = false;
 		_myRigidbody = this.GetComponent<Rigidbody> ();
 	}
 
@@ -61,12 +63,13 @@ public class RigidBodyMovement : MonoBehaviour {
 
 
 
+	if (gameStart) {
+			float x = Input.GetAxis ("Horizontal");
+			float y = Input.GetAxis ("Vertical");
 
-		float x = Input.GetAxis ("Horizontal");
-		float y = Input.GetAxis ("Vertical");
-
-		Vector3 movement = new Vector3 (x * speed, _myRigidbody.velocity.y, y * speed);
-		_myRigidbody.velocity = movement;
+			Vector3 movement = new Vector3 (x * speed, _myRigidbody.velocity.y, y * speed);
+			_myRigidbody.velocity = movement;
+		}
 
 	}
 
@@ -111,6 +114,12 @@ public class RigidBodyMovement : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.Space) && grounded) {
 			SoundMaker.GetComponent<SoundManager>().CharJump();
 			_myRigidbody.AddForce(Vector3.up * jumpForce);
+		}
+	}
+
+	void OnTriggerEnter(Collider other){
+		if (other.gameObject.tag == "StarterBlock") {
+			gameStart = true;
 		}
 	}
 
