@@ -15,32 +15,47 @@ public class MainCharacterAnimator : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
-		if (Input.GetKeyDown (KeyCode.A)) {
+		if (Input.GetKeyDown (KeyCode.A) || Input.GetKeyDown (KeyCode.LeftArrow)) {
 			anim.SetBool ("Left", true);
 		}
 
-		if (Input.GetKeyUp (KeyCode.A)) {
+
+		if (Input.GetKeyUp (KeyCode.A) || Input.GetKeyUp (KeyCode.LeftArrow)) {
 			anim.SetBool ("Left", false);
 		}
 
-		if (Input.GetKeyDown (KeyCode.D)) {
+		if (Input.GetAxis ("LeftJoystickX") > 0) {
+
 			anim.SetBool ("Right", true);
+		} else {
+			anim.SetBool ("Left", false);
 		}
-		if (Input.GetKeyUp (KeyCode.D)) {
+
+		if (Input.GetAxis ("LeftJoystickX") < 0) {
+
+			anim.SetBool ("Left", true);
+		} else {
 			anim.SetBool ("Right", false);
 		}
 
-		if (Input.GetKeyDown (KeyCode.W)) {
+		if (Input.GetKeyDown (KeyCode.D) || Input.GetKeyDown (KeyCode.RightArrow)) {
+			anim.SetBool ("Right", true);
+		}
+		if (Input.GetKeyUp (KeyCode.D) || Input.GetKeyUp (KeyCode.RightArrow)) {
+			anim.SetBool ("Right", false);
+		}
+
+		if (Input.GetKeyDown (KeyCode.W) || Input.GetKeyDown (KeyCode.UpArrow)) {
 			anim.SetBool ("Back", true);
 		}
-		if (Input.GetKeyUp (KeyCode.W)) {
+		if (Input.GetKeyUp (KeyCode.W) || Input.GetKeyUp (KeyCode.UpArrow)) {
 			anim.SetBool ("Back", false);
 		}
 
-		if (Input.GetKeyDown (KeyCode.S)) {
+		if (Input.GetKeyDown (KeyCode.S) || Input.GetKeyDown (KeyCode.DownArrow)) {
 			anim.SetBool ("Front", true);
 		}
-		if (Input.GetKeyUp (KeyCode.S)) {
+		if (Input.GetKeyUp (KeyCode.S) || Input.GetKeyUp (KeyCode.DownArrow)) {
 			anim.SetBool ("Front", false);
 		}
 

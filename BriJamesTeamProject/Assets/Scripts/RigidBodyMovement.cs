@@ -26,6 +26,7 @@ public class RigidBodyMovement : MonoBehaviour {
 	private float duration = 2f;
 	private float t;
 	public bool gameStart;
+	public static bool ControllerSupported = false;
 
 
 	void Awake(){
@@ -35,7 +36,11 @@ public class RigidBodyMovement : MonoBehaviour {
 		camera = Camera.main;
 		color1 = camera.backgroundColor;
 		color2 = Color.black;
-		gameStart = false;
+		if (Application.loadedLevelName == "TutorialLevel") {
+			gameStart = false;
+		} else {
+			gameStart = true;
+		}
 		_myRigidbody = this.GetComponent<Rigidbody> ();
 	}
 
@@ -64,11 +69,22 @@ public class RigidBodyMovement : MonoBehaviour {
 
 
 	if (gameStart) {
+
+
+
+			if(!ControllerSupported){
 			float x = Input.GetAxis ("Horizontal");
 			float y = Input.GetAxis ("Vertical");
+				Vector3 movement = new Vector3 (x * speed, _myRigidbody.velocity.y, y * speed);
+				_myRigidbody.velocity = movement;
+			} else if (ControllerSupported){
+			float x = Input.GetAxis ("LeftJoystickX");
+			float y = Input.GetAxis ("LeftJoystickY");
+				Vector3 movement = new Vector3 (x * speed, _myRigidbody.velocity.y, y * speed);
+				_myRigidbody.velocity = movement;
+			}
 
-			Vector3 movement = new Vector3 (x * speed, _myRigidbody.velocity.y, y * speed);
-			_myRigidbody.velocity = movement;
+
 		}
 
 	}
@@ -76,11 +92,13 @@ public class RigidBodyMovement : MonoBehaviour {
 
 	void Update () {
 
-		if (Input.GetMouseButtonDown (0) || Input.GetKeyDown (KeyCode.Return)) {
+
+
+		if (Input.GetMouseButtonDown (0) || Input.GetKeyDown (KeyCode.Return) || Input.GetButtonDown("X")) {
 			SoundMaker.GetComponent<SoundManager> ().MakeSound ();
 		}
 
-		if (Input.GetMouseButton (0) || Input.GetKey (KeyCode.Return)) {
+		if (Input.GetMouseButton (0) || Input.GetKey (KeyCode.Return) || Input.GetButton("X")) {
 			AttackArea.SetActive (true);
 			AttackArea.GetComponent<Attack> ().charging = 1;
 			ChargeLight.intensity += 0.10f;
@@ -94,7 +112,7 @@ public class RigidBodyMovement : MonoBehaviour {
 			}
 
 			camera.backgroundColor = lerpcolor;
-		} else if (Input.GetMouseButtonUp (0) || Input.GetKeyUp (KeyCode.Return)) {
+		} else if (Input.GetMouseButtonUp (0) || Input.GetKeyUp (KeyCode.Return) || Input.GetButtonUp("X")) {
 			AttackArea.GetComponent<Attack> ().charging = 2;
 			SoundMaker.GetComponent<SoundManager> ().Release ();
 			ChargeLight.intensity = 0f;
@@ -111,7 +129,7 @@ public class RigidBodyMovement : MonoBehaviour {
 
 		}
 
-		if (Input.GetKeyDown (KeyCode.Space) && grounded) {
+		if (Input.GetKeyDown (KeyCode.Space) && grounded || Input.GetButtonDown("A") && grounded) {
 			SoundMaker.GetComponent<SoundManager>().CharJump();
 			_myRigidbody.AddForce(Vector3.up * jumpForce);
 		}
