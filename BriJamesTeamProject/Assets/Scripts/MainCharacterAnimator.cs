@@ -24,20 +24,6 @@ public class MainCharacterAnimator : MonoBehaviour {
 			anim.SetBool ("Left", false);
 		}
 
-		if (Input.GetAxis ("LeftJoystickX") > 0) {
-
-			anim.SetBool ("Right", true);
-		} else {
-			anim.SetBool ("Left", false);
-		}
-
-		if (Input.GetAxis ("LeftJoystickX") < 0) {
-
-			anim.SetBool ("Left", true);
-		} else {
-			anim.SetBool ("Right", false);
-		}
-
 		if (Input.GetKeyDown (KeyCode.D) || Input.GetKeyDown (KeyCode.RightArrow)) {
 			anim.SetBool ("Right", true);
 		}
@@ -58,6 +44,36 @@ public class MainCharacterAnimator : MonoBehaviour {
 		if (Input.GetKeyUp (KeyCode.S) || Input.GetKeyUp (KeyCode.DownArrow)) {
 			anim.SetBool ("Front", false);
 		}
+
+//		if(Input.GetAxis ("LeftJoystickX") > 0) {
+//			anim.SetBool ("Left", false);
+//			anim.SetBool ("Front", false);
+//			anim.SetBool ("Back", false);
+//			anim.SetBool ("Right", true);
+//
+//		}
+//		
+//		else if (Input.GetAxis ("LeftJoystickX") < 0) {
+//			anim.SetBool ("Right", false);
+//			anim.SetBool ("Front", false);
+//			anim.SetBool ("Back", false);
+//			anim.SetBool ("Left", true);
+//		}
+//
+//		else if (Input.GetAxis ("LeftJoystickY") > 0.2f) {
+//			anim.SetBool ("Right", false);
+//			anim.SetBool ("Left", false);
+//			anim.SetBool ("Front", false);
+//			anim.SetBool ("Back", true);
+//
+//		}
+//
+//		else if (Input.GetAxis ("LeftJoystickY") < 0.2f) {
+//			anim.SetBool ("Right", false);
+//			anim.SetBool ("Left", false);
+//			anim.SetBool ("Back", false);
+//			anim.SetBool ("Front", true);
+//		}
 
 		if (Player.GetComponent<RigidBodyMovement> ().grounded) {
 			anim.SetBool ("jump", false);
