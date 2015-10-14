@@ -1,8 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent (typeof (AudioSource))]
+
 public class Cow : MonoBehaviour {
 
+	//public AudioClip Moo;
+	//public AudioClip AngryMoo;
 	public Transform _myTransform;
 	public Rigidbody _myRigidbody;
 	//public bool dead;
@@ -11,7 +15,12 @@ public class Cow : MonoBehaviour {
 	public float maxXZ = 400f;
 	public float minY = 200f;
 	public float maxY = 400f;
+	private float timer;
+	private bool down;
 
+	public Transform GroundCheck;
+	public float groundRadius = 0.2f;
+	public LayerMask WhatisGround;
 
 	// Use this for initialization
 	void Start () {
@@ -19,10 +28,42 @@ public class Cow : MonoBehaviour {
 		deadAnim = true;
 		_myRigidbody = GetComponent<Rigidbody> ();
 		_myTransform = transform;
+		timer = Random.Range (4f, 10f);
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+		timer -= Time.deltaTime;
+	
+		Collider[] hitColliders = Physics.OverlapSphere (GroundCheck.position, groundRadius, WhatisGround);
+		int i = 0;
+		
+		if (i < hitColliders.Length) {
+			if(!down){
+				down = true;
+				Debug.Log ("Down MOO");
+				//GetComponent<AudioSource>().PlayOneShot(AngryMoo);
+			}
+			if(timer < 0){
+				Debug.Log ("Angry MOO");
+				//GetComponent<AudioSource>().PlayOneShot(AngryMoo);
+				timer = Random.Range (4f, 10f);
+			}
+		} else {
+			if (timer < 0) {
+				Debug.Log ("MOO");
+				//GetComponent<AudioSource>().PlayOneShot(Moo);
+				timer = Random.Range (4f, 10f);
+			}
+		}
+
+
+
+
+
+
+
 		if (!deadAnim) {
 			Vector3 deadFly = new Vector3(Random.Range(minXZ,maxXZ),Random.Range(minY, maxY),Random.Range(minXZ,maxXZ));
 			_myRigidbody.AddForce(deadFly);
