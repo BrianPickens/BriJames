@@ -16,7 +16,13 @@ public class StartScreen : MonoBehaviour {
 	void OnTriggerEnter(Collider other){
 
 		if (other.gameObject.tag == "Player") {
-			Application.LoadLevel (1);
+			if(Application.loadedLevel == 0){
+				Application.LoadLevel (1);
+			}
+
+			else if(Application.loadedLevel == 1){
+				Application.LoadLevel (2);
+			}
 		}
 	}
 }
