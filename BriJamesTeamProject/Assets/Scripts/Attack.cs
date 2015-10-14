@@ -107,5 +107,10 @@ public class Attack : MonoBehaviour {
 			// Destroy(other.gameObject);
 		}
 
+        if(other.gameObject.tag == "Grass" && charging == 2)
+        {
+            other.gameObject.GetComponent<GrassExplode>().GrassSplode();
+        }
+
     }
 }
