@@ -28,6 +28,7 @@ GameObject:
   - 114: {fileID: 11458640}
   - 114: {fileID: 11421852}
   - 114: {fileID: 11457236}
+  - 114: {fileID: 11494712}
   m_Layer: 0
   m_Name: MCsprite
   m_TagString: Untagged
@@ -119,8 +120,8 @@ GameObject:
   - 114: {fileID: 11452698}
   - 54: {fileID: 5442448}
   - 82: {fileID: 8291664}
-  - 81: {fileID: 8169006}
   - 108: {fileID: 10860550}
+  - 81: {fileID: 8182294}
   m_Layer: 0
   m_Name: PlayerCharacter 1
   m_TagString: Player
@@ -218,7 +219,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 173794}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18.5374985, y: 1.76999998, z: -8.8851366}
+  m_LocalPosition: {x: -20.7729359, y: 280.109985, z: -3.17935705}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 407294}
@@ -337,7 +338,7 @@ MeshRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 2facb00d5750f8e4e89d07bbbf9ab08e, type: 2}
+  - {fileID: 2100000, guid: b4590119194c50e4592ce674ce498627, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -418,7 +419,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!81 &8169006
+--- !u!81 &8182294
 AudioListener:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -726,6 +727,17 @@ MonoBehaviour:
   growRate: .200000003
   explodeRate: 10
   charging: 0
+--- !u!114 &11494712
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 116894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 572cbb5cae95cac46b6c87dae605d491, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!135 &13542570
 SphereCollider:
   m_ObjectHideFlags: 1

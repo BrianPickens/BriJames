@@ -43,10 +43,10 @@ public class Attack : MonoBehaviour {
 			if(transform.localScale.x < 10){
 				chargePower = 1;
 			}
-			if(transform.localScale.x < 9){
+			if(transform.localScale.x < 8){
 				chargePower = 2;
 			}
-			if(transform.localScale.x < 7){
+			if(transform.localScale.x < 6){
 				chargePower = 3;
 			}
 			if(transform.localScale.x < 4){
@@ -94,7 +94,7 @@ public class Attack : MonoBehaviour {
 			other.gameObject.GetComponent<Reactive>().explodable = false;
 			other.gameObject.GetComponent<Reactive>().charge = chargePower;
 			//SoundMaker.GetComponent<SoundManager>().HitOther();
-			other.gameObject.GetComponent<Rigidbody>().mass = 1;
+			//other.gameObject.GetComponent<Rigidbody>().mass = 1;
 			other.gameObject.GetComponent<Reactive>().aSplode = true;
 			}
 

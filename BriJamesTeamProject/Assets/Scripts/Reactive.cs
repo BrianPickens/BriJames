@@ -24,6 +24,9 @@ public class Reactive : MonoBehaviour {
 	private float incrementXZ = 200f;
 	private float incrementY = 200f;
 
+	private float currentmass;
+	private float lowestmass;
+
 	// Use this for initialization
 	void Start () {
 		audio = GetComponent<AudioSource> ();
@@ -33,6 +36,7 @@ public class Reactive : MonoBehaviour {
 		timer = timerTarget;
 		aSplode = false;
 		_myRigidbody = GetComponent<Rigidbody> ();
+		currentmass = _myRigidbody.mass;
 	//	_myRigidbody.freezeRotation = true;
 		//audio.rolloffMode(linear);
 		gameObject.tag = "Explodable";
@@ -57,23 +61,30 @@ public class Reactive : MonoBehaviour {
 			case 1:
 				XZ = incrementXZ * 1f;
 				Y = incrementY * 1;
-				//incrementY = 
+				lowestmass = 25f;
 				break;
 				
 			case 2:
 				XZ = incrementXZ * 2f;
 				Y = incrementY * 2f;
+				lowestmass = 17f;
 				break;
 				
 			case 3:
 				XZ = incrementXZ * 3;
 				Y = incrementY * 3;
+				lowestmass = 5f;
 				break;
 				
 			case 4:
 				XZ = incrementXZ * 4;
 				Y = incrementY * 4;
+				lowestmass = 1f;
 				break;
+			}
+			if(lowestmass < currentmass){
+				currentmass = lowestmass;
+				_myRigidbody.mass = currentmass;
 			}
 			Vector3 deadFly = new Vector3(Random.Range(-baseXZ - XZ, baseXZ + XZ),Random.Range(baseY + Y, baseMaxY + Y),Random.Range(-baseXZ - XZ, baseXZ + XZ));
 			_myRigidbody.AddForce(deadFly);

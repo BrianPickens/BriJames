@@ -4118,10 +4118,6 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 443346, guid: 92a92052ea5c03549a0420995148cb13, type: 2}
   m_PrefabInternal: {fileID: 1972823984}
---- !u!1 &636026467 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 156196, guid: 05db23b63b5ca9d46bf9e508b0f55796, type: 2}
-  m_PrefabInternal: {fileID: 1059015523}
 --- !u!1 &647251863
 GameObject:
   m_ObjectHideFlags: 0
@@ -4524,21 +4520,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 737512395}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &750645059 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 116894, guid: 05db23b63b5ca9d46bf9e508b0f55796, type: 2}
-  m_PrefabInternal: {fileID: 1059015523}
---- !u!114 &750645063
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 750645059}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 572cbb5cae95cac46b6c87dae605d491, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &762749742
 GameObject:
   m_ObjectHideFlags: 0
@@ -6314,46 +6295,6 @@ Prefab:
       propertyPath: m_Name
       value: PlayerCharacter
       objectReference: {fileID: 0}
-    - target: {fileID: 11452698, guid: 05db23b63b5ca9d46bf9e508b0f55796, type: 2}
-      propertyPath: groundRadius
-      value: .5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2369794, guid: 05db23b63b5ca9d46bf9e508b0f55796, type: 2}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2348762, guid: 05db23b63b5ca9d46bf9e508b0f55796, type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2348762, guid: 05db23b63b5ca9d46bf9e508b0f55796, type: 2}
-      propertyPath: m_CastShadows
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 479004, guid: 05db23b63b5ca9d46bf9e508b0f55796, type: 2}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8234540, guid: 05db23b63b5ca9d46bf9e508b0f55796, type: 2}
-      propertyPath: m_Volume
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11452698, guid: 05db23b63b5ca9d46bf9e508b0f55796, type: 2}
-      propertyPath: SoundMaker
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 11452698, guid: 05db23b63b5ca9d46bf9e508b0f55796, type: 2}
-      propertyPath: GrassSound
-      value: 
-      objectReference: {fileID: 636026467}
-    - target: {fileID: 8291664, guid: 05db23b63b5ca9d46bf9e508b0f55796, type: 2}
-      propertyPath: Loop
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 173794, guid: 05db23b63b5ca9d46bf9e508b0f55796, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 05db23b63b5ca9d46bf9e508b0f55796, type: 2}
   m_IsPrefabParent: 0
@@ -8099,17 +8040,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1910758778}
   m_RootOrder: 0
---- !u!1 &1422811270 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 173794, guid: 05db23b63b5ca9d46bf9e508b0f55796, type: 2}
-  m_PrefabInternal: {fileID: 1059015523}
---- !u!81 &1422811271
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1422811270}
-  m_Enabled: 1
 --- !u!1001 &1431027205
 Prefab:
   m_ObjectHideFlags: 0
