@@ -14,6 +14,8 @@ public class RigidBodyMovement : MonoBehaviour {
 	public LayerMask WhatisGround;
 
 	public GameObject AttackArea;
+    public GameObject AttackEffects;
+    public GameObject Particles;
 	//public GameObject DamageArea;
 
 	public GameObject SoundMaker;
@@ -96,6 +98,9 @@ public class RigidBodyMovement : MonoBehaviour {
 
 		if (Input.GetMouseButtonDown (0) || Input.GetKeyDown (KeyCode.Return) || Input.GetButtonDown("X")) {
 			SoundMaker.GetComponent<SoundManager> ().MakeSound ();
+            Particles.SetActive(true);
+            AttackEffects.SetActive(true);
+            AttackEffects.GetComponent<AttackEffects>().charging = true;
 		}
 
 		if (Input.GetMouseButton (0) || Input.GetKey (KeyCode.Return) || Input.GetButton("X")) {
@@ -113,7 +118,10 @@ public class RigidBodyMovement : MonoBehaviour {
 
 			camera.backgroundColor = lerpcolor;
 		} else if (Input.GetMouseButtonUp (0) || Input.GetKeyUp (KeyCode.Return) || Input.GetButtonUp("X")) {
-			AttackArea.GetComponent<Attack> ().charging = 2;
+            Particles.SetActive(false);
+            AttackEffects.GetComponent<AttackEffects>().ResetSphere();
+            //AttackEffects.SetActive(false);
+            AttackArea.GetComponent<Attack> ().charging = 2;
 			SoundMaker.GetComponent<SoundManager> ().Release ();
 			ChargeLight.intensity = 0f;
 			camera.backgroundColor = color1;

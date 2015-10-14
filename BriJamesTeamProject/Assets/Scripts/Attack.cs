@@ -22,7 +22,7 @@ public class Attack : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		//Debug.Log (chargePower);
+		//Debug.Log (charging);
 		if (charging == 0) {
 			MeshRenderer renderer = GetComponent<MeshRenderer> ();
 			Material material = renderer.material;
@@ -30,7 +30,7 @@ public class Attack : MonoBehaviour {
 			color.a = 0.0f;
 			renderer.material.color = color;
 			gameObject.SetActive (false);
-		} else if (transform.localScale.x > 1 && charging == 1) {
+		} else if (transform.localScale.x > 3 && charging == 1) {
 			MeshRenderer renderer = GetComponent<MeshRenderer> ();
 			Material material = renderer.material;
 			Color color = renderer.material.color;
@@ -38,18 +38,18 @@ public class Attack : MonoBehaviour {
 				color.a += 0.005f;
 			}
 			renderer.material.color = color;
-			transform.Rotate(5,5,5);
-			transform.localScale -= new Vector3 (growRate, growRate, growRate);
+            transform.Rotate(5, 5, 5);
+            transform.localScale -= new Vector3 (growRate, growRate, growRate);
 			if(transform.localScale.x < 10){
 				chargePower = 1;
 			}
-			if(transform.localScale.x < 7){
+			if(transform.localScale.x < 9){
 				chargePower = 2;
 			}
-			if(transform.localScale.x < 5){
+			if(transform.localScale.x < 7){
 				chargePower = 3;
 			}
-			if(transform.localScale.x < 3){
+			if(transform.localScale.x < 4){
 				chargePower = 4;
 			}
 		} else if (transform.localScale.x < 10 && charging == 2) {
@@ -62,10 +62,11 @@ public class Attack : MonoBehaviour {
 
 		}
 		else {
-
-			charging = 0;
+            transform.Rotate(5, 5, 5);
+            charging = 0;
 
 		}
+
 
 	}
 
@@ -80,7 +81,7 @@ public class Attack : MonoBehaviour {
 			if(other.gameObject.GetComponent<Enemy>().explodable){
 			other.gameObject.GetComponent<Enemy>().explodable = false;
 			other.gameObject.GetComponent<Enemy>().charge = chargePower;
-			SoundMaker.GetComponent<SoundManager>().HitOther();
+			//SoundMaker.GetComponent<SoundManager>().HitOther();
 			other.gameObject.GetComponent<Rigidbody>().mass = 1;
 			other.gameObject.GetComponent<Enemy>().dead = true;
 			other.gameObject.GetComponent<Enemy>().deadAnim = false;
@@ -92,7 +93,7 @@ public class Attack : MonoBehaviour {
 			if(other.gameObject.GetComponent<Reactive>().explodable){
 			other.gameObject.GetComponent<Reactive>().explodable = false;
 			other.gameObject.GetComponent<Reactive>().charge = chargePower;
-			SoundMaker.GetComponent<SoundManager>().HitOther();
+			//SoundMaker.GetComponent<SoundManager>().HitOther();
 			other.gameObject.GetComponent<Rigidbody>().mass = 1;
 			other.gameObject.GetComponent<Reactive>().aSplode = true;
 			}
@@ -100,7 +101,7 @@ public class Attack : MonoBehaviour {
 		}
 		if(other.gameObject.tag == "Cow" && charging == 2)
 		{
-			SoundMaker.GetComponent<SoundManager>().HitOther();
+			//SoundMaker.GetComponent<SoundManager>().HitOther();
 			//other.gameObject.GetComponent<Rigidbody>().mass = 1;
 			other.gameObject.GetComponent<Cow>().deadAnim = false;
 			// Destroy(other.gameObject);
