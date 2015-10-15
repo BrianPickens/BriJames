@@ -290,7 +290,7 @@ MonoBehaviour:
     Space to Jump
 
 
-    Enter to Interact'
+    Hold Enter to Interact'
 --- !u!222 &310347016
 CanvasRenderer:
   m_ObjectHideFlags: 0
