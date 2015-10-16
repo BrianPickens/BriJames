@@ -20,6 +20,7 @@ public class GrassExplode : MonoBehaviour {
         {
             timer -= Time.deltaTime;
             if( timer < 0){
+				gameObject.tag = "Untagged";
 				Explode.SetActive(false);
                 } 
         }
@@ -32,6 +33,7 @@ public class GrassExplode : MonoBehaviour {
          GrassTop.SetActive(false);
          GrassBottom.SetActive(false);
          Explode.SetActive(true);
+		 
          hit = true;
         }
     }
