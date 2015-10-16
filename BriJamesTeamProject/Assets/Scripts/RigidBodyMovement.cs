@@ -127,6 +127,7 @@ public class RigidBodyMovement : MonoBehaviour {
 			camera.backgroundColor = color1;
 			t = 0f;
 			SunLight.GetComponent<Light>().intensity = 8;
+			GrassSound.GetComponent<AudioSource>().volume = 0f;
 
 		} else {
 			if (SunLight.GetComponent<Light> ().intensity > 1.25f) {
