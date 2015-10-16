@@ -12,6 +12,11 @@ public class AttackEffects : MonoBehaviour {
     // Use this for initialization
     void Start () {
         _myTransform = transform;
+		MeshRenderer renderer = GetComponent<MeshRenderer>();
+		Material material = renderer.material;
+		Color color = renderer.material.color;
+		color.a = 0.0f;
+		renderer.material.color = color;
         transform.localScale = new Vector3(10f, 10f, 10f);
     }
 	
@@ -31,7 +36,7 @@ public class AttackEffects : MonoBehaviour {
             MeshRenderer renderer = GetComponent<MeshRenderer>();
             Material material = renderer.material;
             Color color = renderer.material.color;
-            if (color.a < 0.6f)
+            if (color.a < 0.4f)
             {
                 color.a += 0.01f;
             }
