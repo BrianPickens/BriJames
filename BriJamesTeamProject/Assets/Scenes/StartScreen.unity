@@ -284,13 +284,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'W,A,S,D to Move
+  m_Text: 'Left Joystick to Move
 
 
-    Space to Jump
+    A to Jump
 
 
-    Hold Enter to Interact'
+    Hold X to Interact'
 --- !u!222 &310347016
 CanvasRenderer:
   m_ObjectHideFlags: 0
