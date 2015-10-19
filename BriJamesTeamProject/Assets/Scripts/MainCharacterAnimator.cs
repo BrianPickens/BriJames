@@ -45,35 +45,44 @@ public class MainCharacterAnimator : MonoBehaviour {
 			anim.SetBool ("Front", false);
 		}
 
-//		if(Input.GetAxis ("LeftJoystickX") > 0) {
-//			anim.SetBool ("Left", false);
-//			anim.SetBool ("Front", false);
-//			anim.SetBool ("Back", false);
-//			anim.SetBool ("Right", true);
-//
-//		}
-//		
-//		else if (Input.GetAxis ("LeftJoystickX") < 0) {
-//			anim.SetBool ("Right", false);
-//			anim.SetBool ("Front", false);
-//			anim.SetBool ("Back", false);
-//			anim.SetBool ("Left", true);
-//		}
-//
-//		else if (Input.GetAxis ("LeftJoystickY") > 0.2f) {
-//			anim.SetBool ("Right", false);
-//			anim.SetBool ("Left", false);
-//			anim.SetBool ("Front", false);
-//			anim.SetBool ("Back", true);
-//
-//		}
-//
-//		else if (Input.GetAxis ("LeftJoystickY") < 0.2f) {
-//			anim.SetBool ("Right", false);
-//			anim.SetBool ("Left", false);
-//			anim.SetBool ("Back", false);
-//			anim.SetBool ("Front", true);
-//		}
+		if(Input.GetAxis ("LeftJoystickX") > 0f) {
+			anim.SetBool ("Left", false);
+			anim.SetBool ("Front", false);
+			anim.SetBool ("Back", false);
+			anim.SetBool ("Right", true);
+			Debug.Log ("right");
+		}
+		
+		else if (Input.GetAxis ("LeftJoystickX") < 0f) {
+			anim.SetBool ("Right", false);
+			anim.SetBool ("Front", false);
+			anim.SetBool ("Back", false);
+			anim.SetBool ("Left", true);
+			Debug.Log ("left");
+		}
+
+		else if (Input.GetAxis ("LeftJoystickY") > 0.2f) {
+			anim.SetBool ("Right", false);
+			anim.SetBool ("Left", false);
+			anim.SetBool ("Front", false);
+			anim.SetBool ("Back", true);
+			Debug.Log ("back");
+		}
+
+		else if (Input.GetAxis ("LeftJoystickY") < 0.2f) {
+			anim.SetBool ("Right", false);
+			anim.SetBool ("Left", false);
+			anim.SetBool ("Back", false);
+			anim.SetBool ("Front", true);
+			Debug.Log ("front");
+		}
+		else{
+			anim.SetBool ("Right", false);
+			anim.SetBool ("Left", false);
+			anim.SetBool ("Back", false);
+			anim.SetBool ("Front", true);
+			Debug.Log ("normalize");
+		}
 
 		if (Player.GetComponent<RigidBodyMovement> ().grounded) {
 			anim.SetBool ("jump", false);
