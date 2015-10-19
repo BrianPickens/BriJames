@@ -1,22 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &132250
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 481440}
-  - 33: {fileID: 3317906}
-  - 23: {fileID: 2359988}
-  m_Layer: 8
-  m_Name: Group27787
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &182038
 GameObject:
   m_ObjectHideFlags: 0
@@ -25,11 +8,13 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 404500}
-  - 54: {fileID: 5451018}
-  - 82: {fileID: 8260300}
-  - 114: {fileID: 11456228}
-  - 135: {fileID: 13580880}
-  m_Layer: 8
+  - 33: {fileID: 3392228}
+  - 23: {fileID: 2348152}
+  - 95: {fileID: 9547674}
+  - 54: {fileID: 5450638}
+  - 82: {fileID: 8230710}
+  - 114: {fileID: 11466476}
+  m_Layer: 0
   m_Name: Rock_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,31 +27,18 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 182038}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.61999989, y: -10.3000002, z: -154.580002}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 481440}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
---- !u!4 &481440
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 132250}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
+  m_LocalPosition: {x: -6.94759369, y: 2.3900001, z: -69.3489838}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 404500}
+  m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!23 &2359988
+--- !u!23 &2348152
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 132250}
+  m_GameObject: {fileID: 182038}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -85,29 +57,29 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!33 &3317906
+--- !u!33 &3392228
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 132250}
-  m_Mesh: {fileID: 4300000, guid: b45c4483edf5f4c45bd50be86910831a, type: 3}
---- !u!54 &5451018
+  m_GameObject: {fileID: 182038}
+  m_Mesh: {fileID: 4300000, guid: baed13d72db03c442a40aa89702645a3, type: 3}
+--- !u!54 &5450638
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 182038}
   serializedVersion: 2
-  m_Mass: 100
-  m_Drag: .5
+  m_Mass: 1
+  m_Drag: 200
   m_AngularDrag: .0500000007
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!82 &8260300
+--- !u!82 &8230710
 AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -130,7 +102,7 @@ AudioSource:
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
-  BypassListenerEffects: 1
+  BypassListenerEffects: 0
   BypassReverbZones: 0
   rolloffCustomCurve:
     serializedVersion: 2
@@ -177,7 +149,24 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!114 &11456228
+--- !u!95 &9547674
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 182038}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: baed13d72db03c442a40aa89702645a3, type: 3}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11466476
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -193,18 +182,6 @@ MonoBehaviour:
   aSplode: 0
   explodable: 0
   charge: 0
---- !u!135 &13580880
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 182038}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: .5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -222,7 +199,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Drag
-      value: .5
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: BypassListenerEffects
