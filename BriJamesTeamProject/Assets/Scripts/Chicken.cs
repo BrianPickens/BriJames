@@ -49,7 +49,9 @@ public class Chicken : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+
+		_myTransform.LookAt (Camera.main.transform);
+
 		jumpTimer -= Time.deltaTime;
 		if (jumpTimer < 0) {
 			//_myRigidbody.AddForce(Vector3.up * 150f);
