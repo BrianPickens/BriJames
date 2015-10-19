@@ -19,6 +19,8 @@ public class Chicken : MonoBehaviour {
 	public bool explodable;
 	public int charge;
 
+	private float jumpTimer;
+
 
 
 	//private Transform _myTransform;
@@ -34,7 +36,7 @@ public class Chicken : MonoBehaviour {
 		_myRigidbody = GetComponent<Rigidbody> ();
 		_myTransform = transform;
 	//	_targetVector = new Vector3(_myTransform.position.x + Random.Range (-5f,5f),_myTransform.position.y, _myTransform.position.z + Random.Range (-5f,5f));
-
+		jumpTimer = Random.Range (2f, 4f);
 		explodable = true;
 		timer = timerTarget;
 		gameObject.tag = "Chicken";
@@ -48,7 +50,12 @@ public class Chicken : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-		
+		jumpTimer -= Time.deltaTime;
+		if (jumpTimer < 0) {
+			//_myRigidbody.AddForce(Vector3.up * 150f);
+			_myRigidbody.velocity = new Vector3(0,4f,0);
+			jumpTimer = Random.Range (2f,4f);
+		}
 //		if (Target != null && !dead) {
 			//	Target.position = new Vector3 (Target.position.x, _myTransform.position.y, Target.position.z);
 			//	_myTransform.LookAt(Target);
