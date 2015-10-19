@@ -3576,7 +3576,7 @@ Transform:
   m_LocalScale: {x: 20, y: 1, z: 20}
   m_Children: []
   m_Father: {fileID: 1766416056}
-  m_RootOrder: 43
+  m_RootOrder: 42
 --- !u!1001 &487912130
 Prefab:
   m_ObjectHideFlags: 0
@@ -10316,7 +10316,7 @@ Transform:
   m_LocalScale: {x: 10, y: 3, z: 10}
   m_Children: []
   m_Father: {fileID: 1766416056}
-  m_RootOrder: 37
+  m_RootOrder: 36
 --- !u!23 &1548484464
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11386,6 +11386,58 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 144e559fe855dcc4cb7d6334dfc9ab85, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1676604818
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1676604820}
+  - 65: {fileID: 1676604819}
+  - 114: {fileID: 1676604821}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1676604819
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1676604818}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1676604820
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1676604818}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.0999999, y: -47.0999985, z: -93.5}
+  m_LocalScale: {x: 425.547028, y: 1, z: 444.89035}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+--- !u!114 &1676604821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1676604818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56f906b00bb5fce479bcc81cf854affd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1683942265
 Prefab:
   m_ObjectHideFlags: 0
@@ -12184,13 +12236,13 @@ Transform:
   - {fileID: 905962401}
   - {fileID: 432241796}
   - {fileID: 1713509268}
+  - {fileID: 2073265394}
   - {fileID: 3556189}
   - {fileID: 605042366}
   - {fileID: 793238399}
   - {fileID: 458211426}
   - {fileID: 485930058}
   - {fileID: 1905328739}
-  - {fileID: 2073265394}
   - {fileID: 333546257}
   - {fileID: 1716333020}
   - {fileID: 1750871795}
@@ -12202,14 +12254,14 @@ Transform:
   - {fileID: 111900}
   - {fileID: 1307174067}
   - {fileID: 770022489}
-  - {fileID: 422048348}
   - {fileID: 1548484463}
+  - {fileID: 422048348}
   - {fileID: 1599596713}
   - {fileID: 216683886}
   - {fileID: 799648194}
   - {fileID: 1152768155}
-  - {fileID: 2037081880}
   - {fileID: 486920744}
+  - {fileID: 2037081880}
   - {fileID: 1000367677}
   m_Father: {fileID: 0}
   m_RootOrder: 13
@@ -14055,7 +14107,7 @@ Transform:
   m_LocalScale: {x: 20, y: 3, z: 20}
   m_Children: []
   m_Father: {fileID: 1766416056}
-  m_RootOrder: 24
+  m_RootOrder: 18
 --- !u!23 &2073265395
 MeshRenderer:
   m_ObjectHideFlags: 0
