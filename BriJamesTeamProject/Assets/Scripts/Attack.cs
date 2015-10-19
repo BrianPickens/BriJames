@@ -112,5 +112,18 @@ public class Attack : MonoBehaviour {
             other.gameObject.GetComponent<GrassExplode>().GrassSplode();
         }
 
+		if(other.gameObject.tag == "Chicken" && charging == 2)
+		{
+			if(other.gameObject.GetComponent<Chicken>().explodable){
+				other.gameObject.GetComponent<Chicken>().explodable = false;
+				other.gameObject.GetComponent<Chicken>().charge = chargePower;
+				//SoundMaker.GetComponent<SoundManager>().HitOther();
+				other.gameObject.GetComponent<Rigidbody>().mass = 1;
+				other.gameObject.GetComponent<Chicken>().dead = true;
+				other.gameObject.GetComponent<Chicken>().deadAnim = false;
+			}
+			// Destroy(other.gameObject);
+		}
+
     }
 }

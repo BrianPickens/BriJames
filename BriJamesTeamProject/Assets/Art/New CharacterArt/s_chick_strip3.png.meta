@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: bba8a1a1bfb6617449158defbdf9c215
-timeCreated: 1445021967
-licenseType: Free
+timeCreated: 1445236965
+licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
     21300000: s_chick_strip3_0
@@ -10,7 +10,7 @@ TextureImporter:
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0

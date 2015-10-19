@@ -17,6 +17,7 @@ TagManager:
   - ChargeLight
   - Sun
   - StarterBlock
+  - Chicken
   layers:
   - Default
   - TransparentFX
