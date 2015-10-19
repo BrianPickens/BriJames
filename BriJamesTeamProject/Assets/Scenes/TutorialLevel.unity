@@ -7861,7 +7861,7 @@ Transform:
   m_LocalScale: {x: .291763902, y: .840391576, z: .583527803}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 26
 --- !u!1001 &1207914029
 Prefab:
   m_ObjectHideFlags: 0
@@ -12618,15 +12618,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 408390, guid: c8d29badffe59f74f8210c6f73695a75, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -33.1114578
+      value: -37.5400009
       objectReference: {fileID: 0}
     - target: {fileID: 408390, guid: c8d29badffe59f74f8210c6f73695a75, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -6.375
+      value: -5.61000013
       objectReference: {fileID: 0}
     - target: {fileID: 408390, guid: c8d29badffe59f74f8210c6f73695a75, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -76.0498962
+      value: -85.1699982
       objectReference: {fileID: 0}
     - target: {fileID: 408390, guid: c8d29badffe59f74f8210c6f73695a75, type: 2}
       propertyPath: m_LocalRotation.x
@@ -12646,11 +12646,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 408390, guid: c8d29badffe59f74f8210c6f73695a75, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 187224, guid: c8d29badffe59f74f8210c6f73695a75, type: 2}
       propertyPath: m_Name
       value: ExplodableGrassSection (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 408390, guid: c8d29badffe59f74f8210c6f73695a75, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 408390, guid: c8d29badffe59f74f8210c6f73695a75, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 408390, guid: c8d29badffe59f74f8210c6f73695a75, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c8d29badffe59f74f8210c6f73695a75, type: 2}
