@@ -848,7 +848,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b3fe7ec15dd02749b80b7e6a3ef7764, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hit: {fileID: 8300000, guid: 4003be1ff2abc4b44a58379df3672654, type: 3}
+  hit: {fileID: 8300000, guid: 8134ef5b4820cae4ba88615f0b5c55a0, type: 3}
   _myRigidbody: {fileID: 0}
   aSplode: 0
   explodable: 0
@@ -864,7 +864,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b3fe7ec15dd02749b80b7e6a3ef7764, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hit: {fileID: 8300000, guid: 4003be1ff2abc4b44a58379df3672654, type: 3}
+  hit: {fileID: 8300000, guid: 8134ef5b4820cae4ba88615f0b5c55a0, type: 3}
   _myRigidbody: {fileID: 0}
   aSplode: 0
   explodable: 0
@@ -880,7 +880,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b3fe7ec15dd02749b80b7e6a3ef7764, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hit: {fileID: 8300000, guid: 4003be1ff2abc4b44a58379df3672654, type: 3}
+  hit: {fileID: 8300000, guid: 8134ef5b4820cae4ba88615f0b5c55a0, type: 3}
   _myRigidbody: {fileID: 0}
   aSplode: 0
   explodable: 0
@@ -896,7 +896,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b3fe7ec15dd02749b80b7e6a3ef7764, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hit: {fileID: 8300000, guid: 4003be1ff2abc4b44a58379df3672654, type: 3}
+  hit: {fileID: 8300000, guid: 8134ef5b4820cae4ba88615f0b5c55a0, type: 3}
   _myRigidbody: {fileID: 0}
   aSplode: 0
   explodable: 0
@@ -912,7 +912,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b3fe7ec15dd02749b80b7e6a3ef7764, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hit: {fileID: 8300000, guid: 4003be1ff2abc4b44a58379df3672654, type: 3}
+  hit: {fileID: 8300000, guid: 8134ef5b4820cae4ba88615f0b5c55a0, type: 3}
   _myRigidbody: {fileID: 0}
   aSplode: 0
   explodable: 0
@@ -935,7 +935,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: hit
       value: 
-      objectReference: {fileID: 8300000, guid: 4003be1ff2abc4b44a58379df3672654, type: 3}
+      objectReference: {fileID: 8300000, guid: 8134ef5b4820cae4ba88615f0b5c55a0, type: 3}
     - target: {fileID: 0}
       propertyPath: m_Volume
       value: .600000024

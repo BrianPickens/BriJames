@@ -5,8 +5,9 @@ using System.Collections;
 
 public class Cow : MonoBehaviour {
 
-	//public AudioClip Moo;
-	//public AudioClip AngryMoo;
+	public AudioClip Moo;
+	public AudioClip AngryMoo;
+	public AudioClip DownMoo;
 	public Transform _myTransform;
 	public Rigidbody _myRigidbody;
 	//public bool dead;
@@ -43,17 +44,20 @@ public class Cow : MonoBehaviour {
 			if(!down){
 				down = true;
 				Debug.Log ("Down MOO");
-				//GetComponent<AudioSource>().PlayOneShot(AngryMoo);
+				GetComponent<AudioSource>().pitch = Random.Range (0.9f, 1.1f);
+				GetComponent<AudioSource>().PlayOneShot(AngryMoo);
 			}
 			if(timer < 0){
-				Debug.Log ("Angry MOO");
-				//GetComponent<AudioSource>().PlayOneShot(AngryMoo);
+				Debug.Log ("I'm on ground MOO");
+				GetComponent<AudioSource>().pitch = Random.Range (0.9f, 1.1f);
+				GetComponent<AudioSource>().PlayOneShot(DownMoo);
 				timer = Random.Range (4f, 10f);
 			}
 		} else {
 			if (timer < 0) {
 				Debug.Log ("MOO");
-				//GetComponent<AudioSource>().PlayOneShot(Moo);
+				GetComponent<AudioSource>().pitch = Random.Range (0.9f, 1.1f);
+				GetComponent<AudioSource>().PlayOneShot(Moo);
 				timer = Random.Range (4f, 10f);
 			}
 		}

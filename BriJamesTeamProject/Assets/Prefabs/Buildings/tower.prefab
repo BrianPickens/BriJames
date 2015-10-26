@@ -2468,7 +2468,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b3fe7ec15dd02749b80b7e6a3ef7764, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hit: {fileID: 8300000, guid: 4003be1ff2abc4b44a58379df3672654, type: 3}
+  hit: {fileID: 8300000, guid: 8134ef5b4820cae4ba88615f0b5c55a0, type: 3}
   _myRigidbody: {fileID: 5487850}
   aSplode: 0
   explodable: 1
@@ -2484,7 +2484,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b3fe7ec15dd02749b80b7e6a3ef7764, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hit: {fileID: 8300000, guid: 4003be1ff2abc4b44a58379df3672654, type: 3}
+  hit: {fileID: 8300000, guid: 8134ef5b4820cae4ba88615f0b5c55a0, type: 3}
   _myRigidbody: {fileID: 5449618}
   aSplode: 0
   explodable: 1
@@ -2500,7 +2500,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b3fe7ec15dd02749b80b7e6a3ef7764, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hit: {fileID: 8300000, guid: 4003be1ff2abc4b44a58379df3672654, type: 3}
+  hit: {fileID: 8300000, guid: 8134ef5b4820cae4ba88615f0b5c55a0, type: 3}
   _myRigidbody: {fileID: 5469482}
   aSplode: 0
   explodable: 1
@@ -2516,7 +2516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b3fe7ec15dd02749b80b7e6a3ef7764, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hit: {fileID: 8300000, guid: 4003be1ff2abc4b44a58379df3672654, type: 3}
+  hit: {fileID: 8300000, guid: 8134ef5b4820cae4ba88615f0b5c55a0, type: 3}
   _myRigidbody: {fileID: 5411222}
   aSplode: 0
   explodable: 1
@@ -2532,7 +2532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b3fe7ec15dd02749b80b7e6a3ef7764, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hit: {fileID: 8300000, guid: 4003be1ff2abc4b44a58379df3672654, type: 3}
+  hit: {fileID: 8300000, guid: 8134ef5b4820cae4ba88615f0b5c55a0, type: 3}
   _myRigidbody: {fileID: 5489480}
   aSplode: 0
   explodable: 1
@@ -2548,7 +2548,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b3fe7ec15dd02749b80b7e6a3ef7764, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hit: {fileID: 8300000, guid: 4003be1ff2abc4b44a58379df3672654, type: 3}
+  hit: {fileID: 8300000, guid: 8134ef5b4820cae4ba88615f0b5c55a0, type: 3}
   _myRigidbody: {fileID: 5418890}
   aSplode: 0
   explodable: 1
@@ -2564,7 +2564,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b3fe7ec15dd02749b80b7e6a3ef7764, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hit: {fileID: 8300000, guid: 4003be1ff2abc4b44a58379df3672654, type: 3}
+  hit: {fileID: 8300000, guid: 8134ef5b4820cae4ba88615f0b5c55a0, type: 3}
   _myRigidbody: {fileID: 5457094}
   aSplode: 0
   explodable: 1
@@ -2580,7 +2580,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b3fe7ec15dd02749b80b7e6a3ef7764, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hit: {fileID: 8300000, guid: 4003be1ff2abc4b44a58379df3672654, type: 3}
+  hit: {fileID: 8300000, guid: 8134ef5b4820cae4ba88615f0b5c55a0, type: 3}
   _myRigidbody: {fileID: 5410130}
   aSplode: 0
   explodable: 1
@@ -2596,7 +2596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b3fe7ec15dd02749b80b7e6a3ef7764, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hit: {fileID: 8300000, guid: 4003be1ff2abc4b44a58379df3672654, type: 3}
+  hit: {fileID: 8300000, guid: 8134ef5b4820cae4ba88615f0b5c55a0, type: 3}
   _myRigidbody: {fileID: 5487502}
   aSplode: 0
   explodable: 1
@@ -2612,7 +2612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b3fe7ec15dd02749b80b7e6a3ef7764, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hit: {fileID: 8300000, guid: 4003be1ff2abc4b44a58379df3672654, type: 3}
+  hit: {fileID: 8300000, guid: 8134ef5b4820cae4ba88615f0b5c55a0, type: 3}
   _myRigidbody: {fileID: 5442736}
   aSplode: 0
   explodable: 1
@@ -2628,7 +2628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b3fe7ec15dd02749b80b7e6a3ef7764, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hit: {fileID: 8300000, guid: 4003be1ff2abc4b44a58379df3672654, type: 3}
+  hit: {fileID: 8300000, guid: 8134ef5b4820cae4ba88615f0b5c55a0, type: 3}
   _myRigidbody: {fileID: 5465336}
   aSplode: 0
   explodable: 1
@@ -2644,7 +2644,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b3fe7ec15dd02749b80b7e6a3ef7764, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hit: {fileID: 8300000, guid: 4003be1ff2abc4b44a58379df3672654, type: 3}
+  hit: {fileID: 8300000, guid: 8134ef5b4820cae4ba88615f0b5c55a0, type: 3}
   _myRigidbody: {fileID: 5413952}
   aSplode: 0
   explodable: 1
@@ -2660,7 +2660,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b3fe7ec15dd02749b80b7e6a3ef7764, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hit: {fileID: 8300000, guid: 4003be1ff2abc4b44a58379df3672654, type: 3}
+  hit: {fileID: 8300000, guid: 8134ef5b4820cae4ba88615f0b5c55a0, type: 3}
   _myRigidbody: {fileID: 5426756}
   aSplode: 0
   explodable: 1
@@ -2676,7 +2676,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b3fe7ec15dd02749b80b7e6a3ef7764, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hit: {fileID: 8300000, guid: 4003be1ff2abc4b44a58379df3672654, type: 3}
+  hit: {fileID: 8300000, guid: 8134ef5b4820cae4ba88615f0b5c55a0, type: 3}
   _myRigidbody: {fileID: 5419294}
   aSplode: 0
   explodable: 1
@@ -2692,7 +2692,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b3fe7ec15dd02749b80b7e6a3ef7764, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hit: {fileID: 8300000, guid: 4003be1ff2abc4b44a58379df3672654, type: 3}
+  hit: {fileID: 8300000, guid: 8134ef5b4820cae4ba88615f0b5c55a0, type: 3}
   _myRigidbody: {fileID: 5474446}
   aSplode: 0
   explodable: 1
@@ -2708,6 +2708,10 @@ Prefab:
       propertyPath: m_Volume
       value: .600000024
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: hit
+      value: 
+      objectReference: {fileID: 8300000, guid: 8134ef5b4820cae4ba88615f0b5c55a0, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 170726}
