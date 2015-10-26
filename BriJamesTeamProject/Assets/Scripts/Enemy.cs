@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent (typeof (AudioSource))]
+
 public class Enemy : MonoBehaviour {
 
 	public Transform Target;
@@ -18,6 +20,8 @@ public class Enemy : MonoBehaviour {
     public float timerTarget;
 	public bool explodable;
 	public int charge;
+	private float soundTimer;
+	public AudioClip scaryLaugh;
 
 	Animator anim;
 
@@ -31,6 +35,7 @@ public class Enemy : MonoBehaviour {
 		_myRigidbody = GetComponent<Rigidbody> ();
 		_myTransform = transform;
 		Target = null;
+		soundTimer = Random.Range (2f,5f);
 
 	}
 	
@@ -41,6 +46,11 @@ public class Enemy : MonoBehaviour {
 
 
 		if (Target != null && !dead) {
+			soundTimer -=Time.deltaTime;
+			if(soundTimer < 0){
+				//GetComponent<AudioSource>().PlayOneShot(scaryLaugh);
+				soundTimer = Random.Range (2f,5f);
+			}
 		//	Target.position = new Vector3 (Target.position.x, _myTransform.position.y, Target.position.z);
 		//	_myTransform.LookAt(Target);
 			_myTransform.position = Vector3.MoveTowards(_myTransform.position, Target.position, Time.deltaTime * speed);
@@ -84,6 +94,7 @@ public class Enemy : MonoBehaviour {
                 dead = false;
                 timer = timerTarget;
 				explodable = true;
+				_myRigidbody.mass = 100f;
             }
         }
 	
@@ -91,6 +102,7 @@ public class Enemy : MonoBehaviour {
 
 	public void SetTarget(){
 		Target = GameObject.FindWithTag ("Player").transform;
+		GetComponent<AudioSource>().PlayOneShot(scaryLaugh);
 	}
 
 	void OnTriggerEnter(Collider other){

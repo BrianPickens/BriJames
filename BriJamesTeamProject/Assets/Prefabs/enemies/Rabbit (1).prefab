@@ -9,8 +9,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 443346}
   - 135: {fileID: 13573046}
-  - 114: {fileID: 11429124}
   - 54: {fileID: 5406434}
+  - 82: {fileID: 8245244}
+  - 114: {fileID: 11480562}
   m_Layer: 0
   m_Name: Rabbit (1)
   m_TagString: Enemy
@@ -121,6 +122,76 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!82 &8245244
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 143734}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 10
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!95 &9508396
 Animator:
   serializedVersion: 3
@@ -149,7 +220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ee5b7ad1ef86714db2f37c60fe09f44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &11429124
+--- !u!114 &11480562
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -161,11 +232,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 0}
-  speed: 1
+  speed: 5
   _myTransform: {fileID: 0}
   _myRigidbody: {fileID: 0}
   dead: 0
-  deadAnim: 0
+  deadAnim: 1
   baseXZ: 400
   baseY: 200
   baseMaxY: 400
@@ -174,6 +245,7 @@ MonoBehaviour:
   timerTarget: 2
   explodable: 0
   charge: 0
+  scaryLaugh: {fileID: 8300000, guid: 5d489309d26e5ac4a947125ddbe81bda, type: 3}
 --- !u!135 &13573046
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -264,6 +336,22 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: timerTarget
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: scaryLaugh
+      value: 
+      objectReference: {fileID: 8300000, guid: 5d489309d26e5ac4a947125ddbe81bda, type: 3}
+    - target: {fileID: 0}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: MaxDistance
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

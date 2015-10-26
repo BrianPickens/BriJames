@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent (typeof (AudioSource))]
+
 public class Chicken : MonoBehaviour {
 
 	//public Transform Target;
@@ -18,7 +20,7 @@ public class Chicken : MonoBehaviour {
 	public float timerTarget;
 	public bool explodable;
 	public int charge;
-
+	public AudioClip chickenChirp;
 	private float jumpTimer;
 
 
@@ -56,6 +58,7 @@ public class Chicken : MonoBehaviour {
 		if (jumpTimer < 0) {
 			//_myRigidbody.AddForce(Vector3.up * 150f);
 			_myRigidbody.velocity = new Vector3(0,4f,0);
+			GetComponent<AudioSource>().PlayOneShot(chickenChirp);
 			jumpTimer = Random.Range (2f,4f);
 		}
 //		if (Target != null && !dead) {

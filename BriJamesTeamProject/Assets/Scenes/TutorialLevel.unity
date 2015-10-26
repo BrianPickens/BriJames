@@ -1627,7 +1627,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 448656, guid: 31aa5fd848ad8634993bc0b6a9f13f59, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6561684, guid: 31aa5fd848ad8634993bc0b6a9f13f59, type: 2}
       propertyPath: m_Size.y
@@ -2853,7 +2853,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 448656, guid: 31aa5fd848ad8634993bc0b6a9f13f59, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 180732, guid: 31aa5fd848ad8634993bc0b6a9f13f59, type: 2}
       propertyPath: m_Name
@@ -4219,7 +4219,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 448656, guid: 31aa5fd848ad8634993bc0b6a9f13f59, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 180732, guid: 31aa5fd848ad8634993bc0b6a9f13f59, type: 2}
       propertyPath: m_Name
@@ -8630,7 +8630,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 470820, guid: 5043a05d1a3ec8045a915eab5e68abb0, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 147328, guid: 5043a05d1a3ec8045a915eab5e68abb0, type: 2}
       propertyPath: m_Name
@@ -9124,7 +9124,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 470820, guid: 5043a05d1a3ec8045a915eab5e68abb0, type: 2}
       propertyPath: m_RootOrder
-      value: 17
+      value: 19
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5043a05d1a3ec8045a915eab5e68abb0, type: 2}
@@ -13780,10 +13780,6 @@ Prefab:
       propertyPath: m_Name
       value: cow (4)
       objectReference: {fileID: 0}
-    - target: {fileID: 448656, guid: 31aa5fd848ad8634993bc0b6a9f13f59, type: 2}
-      propertyPath: m_LocalScale.x
-      value: -1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 31aa5fd848ad8634993bc0b6a9f13f59, type: 2}
   m_IsPrefabParent: 0
@@ -13837,6 +13833,10 @@ Prefab:
     - target: {fileID: 180732, guid: 31aa5fd848ad8634993bc0b6a9f13f59, type: 2}
       propertyPath: m_Name
       value: cow (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 11487502, guid: 31aa5fd848ad8634993bc0b6a9f13f59, type: 2}
+      propertyPath: groundRadius
+      value: .400000006
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 31aa5fd848ad8634993bc0b6a9f13f59, type: 2}
