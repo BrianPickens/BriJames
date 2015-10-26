@@ -50,7 +50,7 @@ public class MainCharacterAnimator : MonoBehaviour {
 			anim.SetBool ("Front", false);
 			anim.SetBool ("Back", false);
 			anim.SetBool ("Right", true);
-			Debug.Log ("right");
+		//	Debug.Log ("right");
 		}
 		
 		else if (Input.GetAxis ("LeftJoystickX") < 0f) {
@@ -58,7 +58,7 @@ public class MainCharacterAnimator : MonoBehaviour {
 			anim.SetBool ("Front", false);
 			anim.SetBool ("Back", false);
 			anim.SetBool ("Left", true);
-			Debug.Log ("left");
+		//	Debug.Log ("left");
 		}
 
 		else if (Input.GetAxis ("LeftJoystickY") > 0.2f) {
@@ -66,7 +66,7 @@ public class MainCharacterAnimator : MonoBehaviour {
 			anim.SetBool ("Left", false);
 			anim.SetBool ("Front", false);
 			anim.SetBool ("Back", true);
-			Debug.Log ("back");
+		//	Debug.Log ("back");
 		}
 
 		else if (Input.GetAxis ("LeftJoystickY") < 0.2f) {
@@ -74,14 +74,14 @@ public class MainCharacterAnimator : MonoBehaviour {
 			anim.SetBool ("Left", false);
 			anim.SetBool ("Back", false);
 			anim.SetBool ("Front", true);
-			Debug.Log ("front");
+		//	Debug.Log ("front");
 		}
 		else{
 			anim.SetBool ("Right", false);
 			anim.SetBool ("Left", false);
 			anim.SetBool ("Back", false);
 			anim.SetBool ("Front", true);
-			Debug.Log ("normalize");
+			//Debug.Log ("normalize");
 		}
 
 		if (Player.GetComponent<RigidBodyMovement> ().grounded) {

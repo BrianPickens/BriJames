@@ -29,6 +29,7 @@ GameObject:
   - 114: {fileID: 11421852}
   - 114: {fileID: 11457236}
   - 114: {fileID: 11494712}
+  - 114: {fileID: 11437490}
   m_Layer: 0
   m_Name: MCsprite
   m_TagString: Untagged
@@ -121,7 +122,7 @@ GameObject:
   - 54: {fileID: 5442448}
   - 82: {fileID: 8291664}
   - 108: {fileID: 10860550}
-  - 81: {fileID: 8182294}
+  - 81: {fileID: 8132316}
   m_Layer: 0
   m_Name: PlayerCharacter 1
   m_TagString: Player
@@ -219,7 +220,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 173794}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20.7729359, y: 280.109985, z: -3.17935705}
+  m_LocalPosition: {x: -20.7729359, y: 240, z: -153.100006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 407294}
@@ -419,7 +420,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!81 &8182294
+--- !u!81 &8132316
 AudioListener:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -505,9 +506,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a77152cff34057f49bf78de9ed6c9bb0, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 35d6c57f63bd26445bb491af85ca016f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: .270000011
+  m_Volume: .200000003
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -660,6 +661,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 572cbb5cae95cac46b6c87dae605d491, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11437490
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 116894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 572cbb5cae95cac46b6c87dae605d491, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11452698
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -727,6 +739,7 @@ MonoBehaviour:
   growRate: .200000003
   explodeRate: 10
   charging: 0
+  chargeCount: 0
 --- !u!114 &11494712
 MonoBehaviour:
   m_ObjectHideFlags: 1

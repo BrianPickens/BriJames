@@ -43,19 +43,16 @@ public class Cow : MonoBehaviour {
 		if (i < hitColliders.Length) {
 			if(!down){
 				down = true;
-				Debug.Log ("Down MOO");
 				GetComponent<AudioSource>().pitch = Random.Range (0.9f, 1.1f);
 				GetComponent<AudioSource>().PlayOneShot(AngryMoo);
 			}
 			if(timer < 0){
-				Debug.Log ("I'm on ground MOO");
 				GetComponent<AudioSource>().pitch = Random.Range (0.9f, 1.1f);
 				GetComponent<AudioSource>().PlayOneShot(DownMoo);
 				timer = Random.Range (4f, 10f);
 			}
 		} else {
 			if (timer < 0) {
-				Debug.Log ("MOO");
 				GetComponent<AudioSource>().pitch = Random.Range (0.9f, 1.1f);
 				GetComponent<AudioSource>().PlayOneShot(Moo);
 				timer = Random.Range (4f, 10f);

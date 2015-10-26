@@ -30,6 +30,8 @@ public class RigidBodyMovement : MonoBehaviour {
 	public bool gameStart;
 	public static bool ControllerSupported = false;
 
+	private float chargeTimer;
+
 
 	void Awake(){
 		SoundMaker = GameObject.FindWithTag ("SoundManager");
@@ -38,7 +40,7 @@ public class RigidBodyMovement : MonoBehaviour {
 		camera = Camera.main;
 		color1 = camera.backgroundColor;
 		color2 = Color.black;
-		if (Application.loadedLevelName == "TutorialLevel") {
+		if (Application.loadedLevelName == "TutorialLevel" || Application.loadedLevelName == "HubScene") {
 			gameStart = false;
 		} else {
 			gameStart = true;
@@ -106,6 +108,7 @@ public class RigidBodyMovement : MonoBehaviour {
 		if (Input.GetMouseButton (0) || Input.GetKey (KeyCode.Return) || Input.GetButton("X")) {
 			AttackArea.SetActive (true);
 			AttackArea.GetComponent<Attack> ().charging = 1;
+			chargeTimer += Time.deltaTime;
 			ChargeLight.intensity += 0.10f;
 			SunLight.GetComponent<Light> ().intensity -= 0.01f;
 
@@ -126,7 +129,21 @@ public class RigidBodyMovement : MonoBehaviour {
 			ChargeLight.intensity = 0f;
 			camera.backgroundColor = color1;
 			t = 0f;
-			SunLight.GetComponent<Light>().intensity = 8;
+			if(chargeTimer < 0.5f){
+				SunLight.GetComponent<Light>().intensity = 1;
+			}
+			else if(chargeTimer < 1f){
+				SunLight.GetComponent<Light>().intensity = 3;
+			}
+
+			else if(chargeTimer < 1.5f){
+				SunLight.GetComponent<Light>().intensity = 6;
+			}
+
+			else if (chargeTimer > 1.5f){
+				SunLight.GetComponent<Light>().intensity = 8;
+			}
+			chargeTimer = 0f;
 			GrassSound.GetComponent<AudioSource>().volume = 0f;
 
 		} else {
