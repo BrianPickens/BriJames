@@ -645,7 +645,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SoundMaker: {fileID: 0}
-  growRate: .100000001
+  growRate: .200000003
   explodeRate: 1
   _myTransform: {fileID: 0}
   charging: 0
@@ -736,7 +736,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _myTransform: {fileID: 0}
-  growRate: .200000003
+  growRate: .400000006
   explodeRate: 10
   charging: 0
   chargeCount: 0
@@ -1941,6 +1941,14 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: groundRadius
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: growRate
+      value: .400000006
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
