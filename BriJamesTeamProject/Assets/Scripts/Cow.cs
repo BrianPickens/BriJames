@@ -45,6 +45,7 @@ public class Cow : MonoBehaviour {
 				down = true;
 				GetComponent<AudioSource>().pitch = Random.Range (0.9f, 1.1f);
 				GetComponent<AudioSource>().PlayOneShot(AngryMoo);
+				MetricManagerScript.cowFall += 1;
 			}
 			if(timer < 0){
 				GetComponent<AudioSource>().pitch = Random.Range (0.9f, 1.1f);

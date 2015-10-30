@@ -1,2 +1,0 @@
-Number of times something happened 1: 30
-Number of times something happened 2: 10

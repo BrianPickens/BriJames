@@ -6,9 +6,19 @@ public class MetricManagerScript : MonoBehaviour {
 
 	string createText = "";
 	public static MetricManagerScript metrics;
+	[SerializeField]
+	public static int cowFall;
+	[SerializeField]
+	public static int pieceExplosions;
 	public int sampleMetric1, sampleMetric2;
+	public float levelTimer;
+
+	private float level1Time;
+	private float level2Time;
+	private float level3Time;
 
 	void Awake(){
+		Debug.Log ("I fired");
 		if (metrics == null) {
 			DontDestroyOnLoad (gameObject);
 			metrics = this;
@@ -17,8 +27,23 @@ public class MetricManagerScript : MonoBehaviour {
 		}
 	}
 
-	void Start () {}
-	void Update () {}
+	void Start () {
+
+		levelTimer = 0f;
+	}
+	void Update () {
+
+		levelTimer += Time.deltaTime;
+
+		if (Input.GetMouseButtonDown (0) || Input.GetKeyDown (KeyCode.Return) || Input.GetButtonDown ("X")) {
+			sampleMetric1 += 1;
+		}
+
+		if (Input.GetKeyDown (KeyCode.Space) || Input.GetButtonDown ("A")) {
+			sampleMetric2 += 1;
+		}
+
+	}
 	
 	//When the game quits we'll actually write the file.
 	void OnApplicationQuit(){
@@ -34,12 +59,30 @@ public class MetricManagerScript : MonoBehaviour {
 
 	void GenerateMetricsString(){
 		createText = 
-			"Number of times something happened 1: " + sampleMetric1 + "\n" +
-			"Number of times something happened 2: " + sampleMetric2;
+			"Number of times Jump: " + sampleMetric1 + "\n" +
+			"Number of times Used Power: " + sampleMetric2 + "\n" + 
+			"Number of Cows Tipped: " + cowFall + "\n" +
+			"Number of Pieces Exploded: " + pieceExplosions + "\n" +
+			"Start Time: " + level1Time + "\n" +
+			"Tutorial Time: " + level2Time + "\n" +
+			"Hub Time: " + level3Time + "\n";
 	}
 
 	//Add to your set metrics from other classes whenever you want
 	public void AddToSample1(int amtToAdd){
 		sampleMetric1 += amtToAdd;
+	}
+
+	public void TimeStamp1(){
+		level1Time = levelTimer;
+		levelTimer = 0f;
+	}
+	public void TimeStamp2(){
+		level2Time = levelTimer;
+		levelTimer = 0f;
+	}
+	public void TimeStamp3(){
+		level3Time = levelTimer;
+		levelTimer = 0f;
 	}
 }
