@@ -8134,7 +8134,7 @@ Transform:
   m_LocalScale: {x: .291763902, y: .840391576, z: .583527803}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_RootOrder: 38
 --- !u!1001 &1207914029
 Prefab:
   m_ObjectHideFlags: 0
@@ -13829,7 +13829,7 @@ Transform:
   m_LocalScale: {x: 2634.31226, y: 3.39292479, z: 1131.01392}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 36
+  m_RootOrder: 39
 --- !u!4 &2038677058 stripped
 Transform:
   m_PrefabParentObject: {fileID: 420712, guid: 3a9bb7434922e2445997713b2598f3ea, type: 2}
@@ -14024,6 +14024,8 @@ MonoBehaviour:
   CharacterSprite: {fileID: 658559761}
   CharacterText: {fileID: 1356243525}
   NPC1Sprite: {fileID: 21300000, guid: 3cfc94d96e2a70745a58588b9db5b928, type: 3}
+  JamesSprite: {fileID: 0}
+  BrianSprite: {fileID: 0}
 --- !u!114 &2069229752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14051,12 +14053,12 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: .5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
