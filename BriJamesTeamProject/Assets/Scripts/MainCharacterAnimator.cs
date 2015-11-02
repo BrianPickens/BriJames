@@ -3,6 +3,9 @@ using System.Collections;
 
 public class MainCharacterAnimator : MonoBehaviour {
 
+	public static bool osx = false;
+	public static bool windows = false;
+
 	Animator anim;
 	GameObject Player;
 	private bool controllerSupport;
@@ -52,36 +55,72 @@ public class MainCharacterAnimator : MonoBehaviour {
 			}
 		}
 		if (controllerSupport) {
-			if (Input.GetAxis ("LeftJoystickX") > 0f) {
-				anim.SetBool ("Left", false);
-				anim.SetBool ("Front", false);
-				anim.SetBool ("Back", false);
-				anim.SetBool ("Right", true);
-				//	Debug.Log ("right");
-			} else if (Input.GetAxis ("LeftJoystickX") < 0f) {
-				anim.SetBool ("Right", false);
-				anim.SetBool ("Front", false);
-				anim.SetBool ("Back", false);
-				anim.SetBool ("Left", true);
-				//	Debug.Log ("left");
-			} else if (Input.GetAxis ("LeftJoystickY") > 0.2f) {
-				anim.SetBool ("Right", false);
-				anim.SetBool ("Left", false);
-				anim.SetBool ("Front", false);
-				anim.SetBool ("Back", true);
-				//	Debug.Log ("back");
-			} else if (Input.GetAxis ("LeftJoystickY") < 0.2f) {
-				anim.SetBool ("Right", false);
-				anim.SetBool ("Left", false);
-				anim.SetBool ("Back", false);
-				anim.SetBool ("Front", true);
-				//	Debug.Log ("front");
-			} else {
-				anim.SetBool ("Right", false);
-				anim.SetBool ("Left", false);
-				anim.SetBool ("Back", false);
-				anim.SetBool ("Front", true);
-				//Debug.Log ("normalize");
+			if(windows){
+				if (Input.GetAxis ("LeftJoystickX") > 0f) {
+					anim.SetBool ("Left", false);
+					anim.SetBool ("Front", false);
+					anim.SetBool ("Back", false);
+					anim.SetBool ("Right", true);
+					//	Debug.Log ("right");
+				} else if (Input.GetAxis ("LeftJoystickX") < 0f) {
+					anim.SetBool ("Right", false);
+					anim.SetBool ("Front", false);
+					anim.SetBool ("Back", false);
+					anim.SetBool ("Left", true);
+					//	Debug.Log ("left");
+				} else if (Input.GetAxis ("LeftJoystickY") > 0.2f) {
+					anim.SetBool ("Right", false);
+					anim.SetBool ("Left", false);
+					anim.SetBool ("Front", false);
+					anim.SetBool ("Back", true);
+					//	Debug.Log ("back");
+				} else if (Input.GetAxis ("LeftJoystickY") < 0.2f) {
+					anim.SetBool ("Right", false);
+					anim.SetBool ("Left", false);
+					anim.SetBool ("Back", false);
+					anim.SetBool ("Front", true);
+					//	Debug.Log ("front");
+				} else {
+					anim.SetBool ("Right", false);
+					anim.SetBool ("Left", false);
+					anim.SetBool ("Back", false);
+					anim.SetBool ("Front", true);
+					//Debug.Log ("normalize");
+				}
+			}
+
+			if(osx){
+				if (Input.GetAxis ("MacLeftJoystickX") > 0f) {
+					anim.SetBool ("Left", false);
+					anim.SetBool ("Front", false);
+					anim.SetBool ("Back", false);
+					anim.SetBool ("Right", true);
+					//	Debug.Log ("right");
+				} else if (Input.GetAxis ("MacLeftJoystickX") < 0f) {
+					anim.SetBool ("Right", false);
+					anim.SetBool ("Front", false);
+					anim.SetBool ("Back", false);
+					anim.SetBool ("Left", true);
+					//	Debug.Log ("left");
+				} else if (Input.GetAxis ("MacLeftJoystickY") > 0.2f) {
+					anim.SetBool ("Right", false);
+					anim.SetBool ("Left", false);
+					anim.SetBool ("Front", false);
+					anim.SetBool ("Back", true);
+					//	Debug.Log ("back");
+				} else if (Input.GetAxis ("MacLeftJoystickY") < 0.2f) {
+					anim.SetBool ("Right", false);
+					anim.SetBool ("Left", false);
+					anim.SetBool ("Back", false);
+					anim.SetBool ("Front", true);
+					//	Debug.Log ("front");
+				} else {
+					anim.SetBool ("Right", false);
+					anim.SetBool ("Left", false);
+					anim.SetBool ("Back", false);
+					anim.SetBool ("Front", true);
+					//Debug.Log ("normalize");
+				}
 			}
 		}
 

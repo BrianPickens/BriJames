@@ -30,6 +30,9 @@ public class RigidBodyMovement : MonoBehaviour {
 	public bool gameStart;
 	public static bool ControllerSupported = false;
 
+	private float x;
+	private float y;
+
 	private float chargeTimer;
 
 
@@ -77,16 +80,24 @@ public class RigidBodyMovement : MonoBehaviour {
 
 
 			if(!ControllerSupported){
-			float x = Input.GetAxis ("Horizontal");
-			float y = Input.GetAxis ("Vertical");
+				x = Input.GetAxis ("Horizontal");
+				y = Input.GetAxis ("Vertical");
 				Vector3 movement = new Vector3 (x * speed, _myRigidbody.velocity.y, y * speed);
 				_myRigidbody.velocity = movement;
-			} else if (ControllerSupported){
-			float x = Input.GetAxis ("LeftJoystickX");
-			float y = Input.GetAxis ("LeftJoystickY");
-				Vector3 movement = new Vector3 (x * speed, _myRigidbody.velocity.y, y * speed);
-				_myRigidbody.velocity = movement;
-			}
+			} 
+//			else if (ControllerSupported){
+//
+//				if(MainCharacterAnimator.windows){
+//			//		x = Input.GetAxis ("LeftJoystickX");
+//			//		y = Input.GetAxis ("LeftJoystickY");
+//				}
+//				if(MainCharacterAnimator.osx){
+//				//	x = Input.GetAxis ("MacLeftJoystickX");
+//				//	y = Input.GetAxis ("MacLeftJoystickY");
+//				}
+//				Vector3 movement = new Vector3 (x * speed, _myRigidbody.velocity.y, y * speed);
+//				_myRigidbody.velocity = movement;
+//			}
 
 
 		}
@@ -98,14 +109,14 @@ public class RigidBodyMovement : MonoBehaviour {
 
 
 
-		if (Input.GetMouseButtonDown (0) || Input.GetKeyDown (KeyCode.Return) || Input.GetButtonDown("X")) {
+		if (Input.GetMouseButtonDown (0) || Input.GetKeyDown (KeyCode.Return) || Input.GetButtonDown("X") || Input.GetButtonDown("MacX")) {
 			SoundMaker.GetComponent<SoundManager> ().MakeSound ();
             Particles.SetActive(true);
             AttackEffects.SetActive(true);
             AttackEffects.GetComponent<AttackEffects>().charging = true;
 		}
 
-		if (Input.GetMouseButton (0) || Input.GetKey (KeyCode.Return) || Input.GetButton("X")) {
+		if (Input.GetMouseButton (0) || Input.GetKey (KeyCode.Return) || Input.GetButton("X") || Input.GetButton("MacX")) {
 			AttackArea.SetActive (true);
 			AttackArea.GetComponent<Attack> ().charging = 1;
 			chargeTimer += Time.deltaTime;
@@ -120,7 +131,7 @@ public class RigidBodyMovement : MonoBehaviour {
 			}
 
 			camera.backgroundColor = lerpcolor;
-		} else if (Input.GetMouseButtonUp (0) || Input.GetKeyUp (KeyCode.Return) || Input.GetButtonUp("X")) {
+		} else if (Input.GetMouseButtonUp (0) || Input.GetKeyUp (KeyCode.Return) || Input.GetButtonUp("X") || Input.GetButtonUp("MacX")) {
             Particles.SetActive(false);
             AttackEffects.GetComponent<AttackEffects>().ResetSphere();
             //AttackEffects.SetActive(false);
@@ -155,7 +166,7 @@ public class RigidBodyMovement : MonoBehaviour {
 
 		}
 
-		if (Input.GetKeyDown (KeyCode.Space) && grounded || Input.GetButtonDown("A") && grounded) {
+		if (Input.GetKeyDown (KeyCode.Space) && grounded || Input.GetButtonDown("A") && grounded || Input.GetButtonDown("MacA") && grounded) {
 			SoundMaker.GetComponent<SoundManager>().CharJump();
 			_myRigidbody.AddForce(Vector3.up * jumpForce);
 		}
