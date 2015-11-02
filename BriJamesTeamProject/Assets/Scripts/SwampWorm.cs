@@ -20,8 +20,9 @@ public class SwampWorm : MonoBehaviour {
 	public float timerTarget;
 	public bool explodable;
 	public int charge;
-	public AudioClip scaryLaugh;
-	
+	public AudioClip Scream;
+	public AudioClip Hum;
+
 	Animator anim;
 	
 	// Use this for initialization
@@ -33,7 +34,8 @@ public class SwampWorm : MonoBehaviour {
 		deadAnim = true;
 		_myRigidbody = GetComponent<Rigidbody> ();
 		_myTransform = transform;
-		
+		GetComponent<AudioSource> ().volume = 0.5f;
+		GetComponent<AudioSource> ().PlayOneShot (Hum);
 	}
 	
 	// Update is called once per frame
@@ -50,7 +52,6 @@ public class SwampWorm : MonoBehaviour {
 			case 1:
 				XZ = incrementXZ * 1;
 				Y = incrementY * 1;
-				//incrementY = 
 				break;
 				
 			case 2:
@@ -89,10 +90,18 @@ public class SwampWorm : MonoBehaviour {
 	
 	public void SetScreamOn(){
 		anim.SetBool ("Scream", true);
+		GetComponent<AudioSource> ().Stop ();
+		GetComponent<AudioSource> ().volume = 1f;
+
+		GetComponent<AudioSource> ().PlayOneShot (Scream);
 	}
 
 	public void SetScreamOff(){
 		anim.SetBool ("Scream", false);
+		GetComponent<AudioSource> ().Stop ();
+		GetComponent<AudioSource> ().volume = 0.5f;
+
+		GetComponent<AudioSource> ().PlayOneShot (Hum);
 	}
 
 }

@@ -17551,6 +17551,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8132316, guid: 05db23b63b5ca9d46bf9e508b0f55796, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 05db23b63b5ca9d46bf9e508b0f55796, type: 2}
   m_IsPrefabParent: 0
@@ -37393,6 +37397,8 @@ GameObject:
   - 95: {fileID: 1857019453}
   - 82: {fileID: 1857019457}
   - 114: {fileID: 1857019456}
+  - 54: {fileID: 1857019459}
+  - 135: {fileID: 1857019458}
   m_Layer: 0
   m_Name: s_swampworm_strip3_0
   m_TagString: SwampWorm
@@ -37479,7 +37485,8 @@ MonoBehaviour:
   timerTarget: 0
   explodable: 0
   charge: 0
-  scaryLaugh: {fileID: 0}
+  Scream: {fileID: 8300000, guid: a4b7ab67e30e5bf45858550b6a0b5ff1, type: 3}
+  Hum: {fileID: 8300000, guid: 63237363ecfab0644bf646db32ba1a34, type: 3}
 --- !u!82 &1857019457
 AudioSource:
   m_ObjectHideFlags: 0
@@ -37489,17 +37496,17 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 63237363ecfab0644bf646db32ba1a34, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 15
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -37524,7 +37531,7 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -37550,6 +37557,33 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!135 &1857019458
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1857019452}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: .5
+  m_Center: {x: 0, y: -.560000002, z: 0}
+--- !u!54 &1857019459
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1857019452}
+  serializedVersion: 2
+  m_Mass: 100
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &1860648771
 GameObject:
   m_ObjectHideFlags: 0

@@ -125,5 +125,16 @@ public class Attack : MonoBehaviour {
 			// Destroy(other.gameObject);
 		}
 
+		if (other.gameObject.tag == "SwampWorm" && charging == 2) {
+			if(other.gameObject.GetComponent<SwampWorm>().explodable){
+				other.gameObject.GetComponent<SwampWorm>().explodable = false;
+				other.gameObject.GetComponent<SwampWorm>().charge = chargePower;
+				//SoundMaker.GetComponent<SoundManager>().HitOther();
+				other.gameObject.GetComponent<Rigidbody>().mass = 1;
+				other.gameObject.GetComponent<SwampWorm>().dead = true;
+				other.gameObject.GetComponent<SwampWorm>().deadAnim = false;
+			}
+		}
+
     }
 }
