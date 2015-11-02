@@ -19,6 +19,7 @@ TagManager:
   - StarterBlock
   - Chicken
   - SwampWorm
+  - JamesReaction
   layers:
   - Default
   - TransparentFX

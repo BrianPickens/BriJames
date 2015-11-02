@@ -136,5 +136,9 @@ public class Attack : MonoBehaviour {
 			}
 		}
 
+		if (other.gameObject.tag == "JamesReaction" && charging == 2) {
+			other.gameObject.GetComponent<JamesReaction>().JamesHouseDestroy();
+		}
+
     }
 }
