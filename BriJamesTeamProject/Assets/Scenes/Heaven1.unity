@@ -7498,7 +7498,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GodHead: {fileID: 686369331}
-  GodText: {fileID: 1809649607}
+  GodWords: {fileID: 1809649607}
+  GodText: {fileID: 1883386094}
+  chickcheck: 0
 --- !u!1 &1704714464
 GameObject:
   m_ObjectHideFlags: 0

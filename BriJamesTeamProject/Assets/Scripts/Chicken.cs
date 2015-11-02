@@ -17,7 +17,7 @@ public class Chicken : MonoBehaviour {
 	public float incrementXZ = 200f;
 	public float incrementY = 200f;
 	private float timer;
-	public float timerTarget;
+	private float timerTarget = 0.25f;
 	public bool explodable;
 	public int charge;
 	public AudioClip chickenChirp;
@@ -95,6 +95,7 @@ public class Chicken : MonoBehaviour {
 			Vector3 deadFly = new Vector3(Random.Range(-baseXZ - XZ, baseXZ + XZ),Random.Range(baseY + Y, baseMaxY + Y),Random.Range(-baseXZ - XZ, baseXZ + XZ));
 			_myRigidbody.AddForce(deadFly);
 			deadAnim = true;
+			Achievement.chickenHit += 1;
 		}
 		
 		if (dead && deadAnim)

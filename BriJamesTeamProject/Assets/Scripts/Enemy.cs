@@ -84,6 +84,7 @@ public class Enemy : MonoBehaviour {
 			Vector3 deadFly = new Vector3(Random.Range(-baseXZ - XZ, baseXZ + XZ),Random.Range(baseY + Y, baseMaxY + Y),Random.Range(-baseXZ - XZ, baseXZ + XZ));
 			_myRigidbody.AddForce(deadFly);
 			deadAnim = true;
+			Achievement.rabbitHit += 1;
 		}
 
         if (dead && deadAnim)

@@ -10,9 +10,15 @@ public class Achievement : MonoBehaviour {
 	public static int rabbitHit;
 
 	public GameObject GodHead;
-	public GameObject GodText;
+	public GameObject GodWords;
+	public Text GodText;
 
+	public int chickcheck;
 	private float godTimer;
+	private bool showText;
+	private bool cowAch;
+	private bool chickenAch;
+	private bool rabbitAch;
 
 	void Awake(){
 		if (achievement == null) {
@@ -28,12 +34,45 @@ public class Achievement : MonoBehaviour {
 	void Start () {
 		godTimer = 5f;
 		GodHead.SetActive (false);
-		GodText.SetActive (false);
+		GodWords.SetActive (false);
+		GodText.text = " ";
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	
+		chickcheck = chickenHit;
+
+		if (cowPush > 2 && !cowAch) {
+			showText = true;
+			cowAch = true;
+			GodText.text = "Cow Tipper Achievement!";
+		}
+
+		if (chickenHit > 2 && !chickenAch) {
+			showText = true;
+			chickenAch = true;
+			GodText.text = "Chicken Saver Achievement!";
+		}
+
+		if (rabbitHit > 2 && !rabbitAch) {
+			showText = true;
+			rabbitAch = true;
+			GodText.text = "Rabbit Smacker Achievement!";
+		}
+
+		if (showText) {
+			GodHead.SetActive (true);
+			GodWords.SetActive (true);
+			godTimer -= Time.deltaTime;
+			if(godTimer < 0){
+				GodHead.SetActive (false);
+				GodWords.SetActive (false);
+				godTimer = 5f;
+				showText = false;
+			}
+
+		}
 
 
 	}
