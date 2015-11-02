@@ -6876,7 +6876,20 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11448414, guid: 7f2533b88a149c04795b94759af6c961, type: 2}
+    - {fileID: 11452472, guid: 7f2533b88a149c04795b94759af6c961, type: 2}
+    - {fileID: 8268812, guid: 7f2533b88a149c04795b94759af6c961, type: 2}
+    - {fileID: 5402344, guid: 7f2533b88a149c04795b94759af6c961, type: 2}
+    - {fileID: 11499152, guid: 7f2533b88a149c04795b94759af6c961, type: 2}
+    - {fileID: 8242420, guid: 7f2533b88a149c04795b94759af6c961, type: 2}
+    - {fileID: 5499924, guid: 7f2533b88a149c04795b94759af6c961, type: 2}
+    - {fileID: 11495122, guid: 7f2533b88a149c04795b94759af6c961, type: 2}
+    - {fileID: 8211962, guid: 7f2533b88a149c04795b94759af6c961, type: 2}
+    - {fileID: 5440626, guid: 7f2533b88a149c04795b94759af6c961, type: 2}
+    - {fileID: 11484852, guid: 7f2533b88a149c04795b94759af6c961, type: 2}
+    - {fileID: 8221732, guid: 7f2533b88a149c04795b94759af6c961, type: 2}
+    - {fileID: 5442534, guid: 7f2533b88a149c04795b94759af6c961, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 7f2533b88a149c04795b94759af6c961, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1107215270
