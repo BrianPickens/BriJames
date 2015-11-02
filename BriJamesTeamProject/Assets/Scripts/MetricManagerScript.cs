@@ -16,6 +16,7 @@ public class MetricManagerScript : MonoBehaviour {
 	private float level1Time;
 	private float level2Time;
 	private float level3Time;
+	private float level4Time;
 
 	void Awake(){
 		Debug.Log ("I fired");
@@ -64,8 +65,9 @@ public class MetricManagerScript : MonoBehaviour {
 			"Number of Cows Tipped: " + cowFall + "\n" +
 			"Number of Pieces Exploded: " + pieceExplosions + "\n" +
 			"Start Time: " + level1Time + "\n" +
-			"Tutorial Time: " + level2Time + "\n" +
-			"Hub Time: " + level3Time + "\n";
+			"Heaven Time: " + level2Time + "\n" +
+			"Tutorial Time: " + level3Time + "\n" +
+			"Hub Time: " + level4Time;
 	}
 
 	//Add to your set metrics from other classes whenever you want
@@ -83,6 +85,10 @@ public class MetricManagerScript : MonoBehaviour {
 	}
 	public void TimeStamp3(){
 		level3Time = levelTimer;
+		levelTimer = 0f;
+	}
+	public void TimeStamp4(){
+		level4Time = levelTimer;
 		levelTimer = 0f;
 	}
 }

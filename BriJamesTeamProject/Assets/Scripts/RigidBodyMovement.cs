@@ -40,7 +40,7 @@ public class RigidBodyMovement : MonoBehaviour {
 		camera = Camera.main;
 		color1 = camera.backgroundColor;
 		color2 = Color.black;
-		if (Application.loadedLevelName == "TutorialLevel" || Application.loadedLevelName == "HubScene") {
+		if (Application.loadedLevelName == "TutorialLevel" || Application.loadedLevelName == "HubScene" || Application.loadedLevelName == "Heaven1") {
 			gameStart = false;
 		} else {
 			gameStart = true;

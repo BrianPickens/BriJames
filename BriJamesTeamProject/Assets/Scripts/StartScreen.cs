@@ -30,6 +30,11 @@ public class StartScreen : MonoBehaviour {
 				MetricManagerScript.metrics.TimeStamp3();
 				Application.LoadLevel (3);
 			}
+
+			else if(Application.loadedLevel == 3){
+				MetricManagerScript.metrics.TimeStamp4();
+				Application.LoadLevel (4);
+			}
 		}
 	}
 }
