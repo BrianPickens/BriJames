@@ -8,6 +8,8 @@ public class Achievement : MonoBehaviour {
 	public static int cowPush;
 	public static int chickenHit;
 	public static int rabbitHit;
+	public static int swampWormHit;
+	public static int houseHit;
 
 	public GameObject GodHead;
 	public GameObject GodWords;
@@ -19,6 +21,8 @@ public class Achievement : MonoBehaviour {
 	private bool cowAch;
 	private bool chickenAch;
 	private bool rabbitAch;
+	private bool swampWormAch;
+	private bool houseAch;
 
 	void Awake(){
 		if (achievement == null) {
@@ -43,23 +47,36 @@ public class Achievement : MonoBehaviour {
 	
 		chickcheck = chickenHit;
 
-		if (cowPush > 2 && !cowAch) {
+		if (cowPush > 10 && !cowAch) {
 			showText = true;
 			cowAch = true;
 			GodText.text = "Cow Tipper Achievement!";
 		}
 
-		if (chickenHit > 2 && !chickenAch) {
+		if (chickenHit > 50 && !chickenAch) {
 			showText = true;
 			chickenAch = true;
 			GodText.text = "Chicken Saver Achievement!";
 		}
 
-		if (rabbitHit > 2 && !rabbitAch) {
+		if (rabbitHit > 10 && !rabbitAch) {
 			showText = true;
 			rabbitAch = true;
 			GodText.text = "Rabbit Smacker Achievement!";
 		}
+
+		if (swampWormHit > 5 && !swampWormAch) {
+			showText = true;
+			swampWormAch = true;
+			GodText.text = "Screaming Worm Achievement!";
+		}
+
+		if (houseHit> 500 && !houseAch) {
+			showText = true;
+			houseAch = true;
+			GodText.text = "Holy Savior Achievement!";
+		}
+
 
 		if (showText) {
 			GodHead.SetActive (true);

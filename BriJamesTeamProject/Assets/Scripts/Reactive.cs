@@ -89,6 +89,7 @@ public class Reactive : MonoBehaviour {
 			Vector3 deadFly = new Vector3(Random.Range(-baseXZ - XZ, baseXZ + XZ),Random.Range(baseY + Y, baseMaxY + Y),Random.Range(-baseXZ - XZ, baseXZ + XZ));
 			_myRigidbody.AddForce(deadFly);
 			MetricManagerScript.pieceExplosions += 1;
+			Achievement.houseHit += 1;
 			aSplode = false;
 		}
 
