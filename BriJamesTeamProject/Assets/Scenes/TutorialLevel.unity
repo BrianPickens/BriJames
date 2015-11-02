@@ -5788,7 +5788,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 478856, guid: c6427d4fb225611498b87c6bec1af1df, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 106136, guid: c6427d4fb225611498b87c6bec1af1df, type: 2}
       propertyPath: m_Name
@@ -11171,37 +11171,9 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 436682, guid: c6427d4fb225611498b87c6bec1af1df, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -26.6250153
-      objectReference: {fileID: 0}
-    - target: {fileID: 436682, guid: c6427d4fb225611498b87c6bec1af1df, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -5.13500023
-      objectReference: {fileID: 0}
-    - target: {fileID: 436682, guid: c6427d4fb225611498b87c6bec1af1df, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -82.6198425
-      objectReference: {fileID: 0}
-    - target: {fileID: 436682, guid: c6427d4fb225611498b87c6bec1af1df, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 436682, guid: c6427d4fb225611498b87c6bec1af1df, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 436682, guid: c6427d4fb225611498b87c6bec1af1df, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 436682, guid: c6427d4fb225611498b87c6bec1af1df, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 436682, guid: c6427d4fb225611498b87c6bec1af1df, type: 2}
+    - target: {fileID: 478856, guid: c6427d4fb225611498b87c6bec1af1df, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c6427d4fb225611498b87c6bec1af1df, type: 2}
