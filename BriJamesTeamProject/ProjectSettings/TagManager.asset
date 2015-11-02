@@ -18,6 +18,7 @@ TagManager:
   - Sun
   - StarterBlock
   - Chicken
+  - SwampWorm
   layers:
   - Default
   - TransparentFX

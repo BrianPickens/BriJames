@@ -19,7 +19,6 @@ public class MetricManagerScript : MonoBehaviour {
 	private float level4Time;
 
 	void Awake(){
-		Debug.Log ("I fired");
 		if (metrics == null) {
 			DontDestroyOnLoad (gameObject);
 			metrics = this;
