@@ -55,6 +55,8 @@ public class Reactive : MonoBehaviour {
 		}
 
 		if (aSplode) {
+			_myRigidbody.isKinematic = false;
+			_myRigidbody.useGravity = true;
 			float XZ = 1;
 			float Y = 1;
 			switch (charge){
