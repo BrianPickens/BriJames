@@ -17,7 +17,7 @@ public class Enemy : MonoBehaviour {
 	public float incrementXZ = 200f;
 	public float incrementY = 200f;
     private float timer;
-    public float timerTarget;
+    private float timerTarget;
 	public bool explodable;
 	public int charge;
 	private float soundTimer;
@@ -29,6 +29,7 @@ public class Enemy : MonoBehaviour {
 	void Start () {
 		explodable = true;
 		anim = GetComponentInChildren<Animator> ();
+		timerTarget = 5f;
         timer = timerTarget;
 		gameObject.tag = "Rabbit";
 		deadAnim = true;

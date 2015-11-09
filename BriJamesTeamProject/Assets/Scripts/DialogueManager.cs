@@ -58,5 +58,6 @@ public class DialogueManager : MonoBehaviour {
 
 	public void EndDialogue(){
 		DialogueBox.SetActive (false);
+		GetComponent<AudioSource> ().Stop ();
 	}
 }
