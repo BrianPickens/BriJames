@@ -47,6 +47,7 @@ GameObject:
   - 4: {fileID: 412998}
   - 212: {fileID: 21242136}
   - 95: {fileID: 9508396}
+  - 114: {fileID: 11449060}
   m_Layer: 0
   m_Name: rabbitfrontTemp
   m_TagString: Untagged
@@ -404,6 +405,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ee5b7ad1ef86714db2f37c60fe09f44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11449060
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 154936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e13d59f0ce340b458a855ea30f2c24b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &11480562

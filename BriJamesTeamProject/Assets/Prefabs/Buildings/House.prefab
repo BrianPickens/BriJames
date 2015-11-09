@@ -155,6 +155,7 @@ GameObject:
   - 4: {fileID: 458028}
   - 212: {fileID: 21257926}
   - 95: {fileID: 9505150}
+  - 114: {fileID: 11482554}
   m_Layer: 0
   m_Name: s_chick_strip3_0
   m_TagString: Untagged
@@ -355,6 +356,7 @@ GameObject:
   - 4: {fileID: 423714}
   - 212: {fileID: 21227144}
   - 95: {fileID: 9543748}
+  - 114: {fileID: 11425546}
   m_Layer: 0
   m_Name: s_chick_strip3_0
   m_TagString: Untagged
@@ -826,6 +828,7 @@ GameObject:
   - 4: {fileID: 496120}
   - 212: {fileID: 21241246}
   - 95: {fileID: 9568042}
+  - 114: {fileID: 11469238}
   m_Layer: 0
   m_Name: s_chick_strip3_0
   m_TagString: Untagged
@@ -925,6 +928,7 @@ GameObject:
   - 4: {fileID: 442944}
   - 212: {fileID: 21234314}
   - 95: {fileID: 9540544}
+  - 114: {fileID: 11473098}
   m_Layer: 0
   m_Name: s_chick_strip3_0
   m_TagString: Untagged
@@ -984,6 +988,7 @@ GameObject:
   - 4: {fileID: 435652}
   - 212: {fileID: 21212944}
   - 95: {fileID: 9544990}
+  - 114: {fileID: 11493056}
   m_Layer: 0
   m_Name: s_chick_strip3_0
   m_TagString: Untagged
@@ -1251,6 +1256,7 @@ GameObject:
   - 4: {fileID: 445554}
   - 212: {fileID: 21252452}
   - 95: {fileID: 9509834}
+  - 114: {fileID: 11466302}
   m_Layer: 0
   m_Name: s_chick_strip3_0
   m_TagString: Untagged
@@ -1329,6 +1335,7 @@ GameObject:
   - 4: {fileID: 418354}
   - 212: {fileID: 21218476}
   - 95: {fileID: 9511722}
+  - 114: {fileID: 11459800}
   m_Layer: 0
   m_Name: s_chick_strip3_0
   m_TagString: Untagged
@@ -1388,6 +1395,7 @@ GameObject:
   - 4: {fileID: 486300}
   - 212: {fileID: 21298270}
   - 95: {fileID: 9570090}
+  - 114: {fileID: 11484952}
   m_Layer: 0
   m_Name: s_chick_strip3_0
   m_TagString: Untagged
@@ -2020,8 +2028,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 147328}
-  m_LocalRotation: {x: 0, y: -.301704407, z: 0, w: .953401566}
-  m_LocalPosition: {x: -16.7000008, y: -7.88000011, z: -162.139999}
+  m_LocalRotation: {x: 0, y: .317139179, z: 0, w: .94837904}
+  m_LocalPosition: {x: -37.3325996, y: 1.5, z: 1.61000001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 467714}
@@ -9912,7 +9920,6 @@ MonoBehaviour:
   baseMaxY: 400
   incrementXZ: 200
   incrementY: 200
-  timerTarget: 0
   explodable: 0
   charge: 0
   chickenChirp: {fileID: 8300000, guid: 9ea063be5c137d346bfdab3c4f2e4bbf, type: 3}
@@ -10033,7 +10040,6 @@ MonoBehaviour:
   baseMaxY: 400
   incrementXZ: 200
   incrementY: 200
-  timerTarget: 0
   explodable: 0
   charge: 0
   chickenChirp: {fileID: 8300000, guid: 9ea063be5c137d346bfdab3c4f2e4bbf, type: 3}
@@ -10117,6 +10123,17 @@ MonoBehaviour:
   aSplode: 0
   explodable: 0
   charge: 0
+--- !u!114 &11425546
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 126164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ac6c52c4c09e0c4bb4e8917faf5f665, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11426364
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10250,7 +10267,6 @@ MonoBehaviour:
   baseMaxY: 400
   incrementXZ: 200
   incrementY: 200
-  timerTarget: 0
   explodable: 0
   charge: 0
   chickenChirp: {fileID: 8300000, guid: 9ea063be5c137d346bfdab3c4f2e4bbf, type: 3}
@@ -10403,7 +10419,6 @@ MonoBehaviour:
   baseMaxY: 400
   incrementXZ: 200
   incrementY: 200
-  timerTarget: 0
   explodable: 0
   charge: 0
   chickenChirp: {fileID: 8300000, guid: 9ea063be5c137d346bfdab3c4f2e4bbf, type: 3}
@@ -10428,7 +10443,6 @@ MonoBehaviour:
   baseMaxY: 400
   incrementXZ: 200
   incrementY: 200
-  timerTarget: 0
   explodable: 0
   charge: 0
   chickenChirp: {fileID: 8300000, guid: 9ea063be5c137d346bfdab3c4f2e4bbf, type: 3}
@@ -10501,7 +10515,6 @@ MonoBehaviour:
   baseMaxY: 400
   incrementXZ: 200
   incrementY: 200
-  timerTarget: 0
   explodable: 0
   charge: 0
   chickenChirp: {fileID: 8300000, guid: 9ea063be5c137d346bfdab3c4f2e4bbf, type: 3}
@@ -10537,6 +10550,17 @@ MonoBehaviour:
   aSplode: 0
   explodable: 0
   charge: 0
+--- !u!114 &11459800
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 194964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ac6c52c4c09e0c4bb4e8917faf5f665, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11463810
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10553,6 +10577,17 @@ MonoBehaviour:
   aSplode: 0
   explodable: 0
   charge: 0
+--- !u!114 &11466302
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 188668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ac6c52c4c09e0c4bb4e8917faf5f665, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11466426
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10601,6 +10636,17 @@ MonoBehaviour:
   aSplode: 0
   explodable: 0
   charge: 0
+--- !u!114 &11469238
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 162934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ac6c52c4c09e0c4bb4e8917faf5f665, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11470068
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10649,6 +10695,17 @@ MonoBehaviour:
   aSplode: 0
   explodable: 0
   charge: 0
+--- !u!114 &11473098
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ac6c52c4c09e0c4bb4e8917faf5f665, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11477886
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10686,7 +10743,6 @@ MonoBehaviour:
   baseMaxY: 400
   incrementXZ: 200
   incrementY: 200
-  timerTarget: 0
   explodable: 0
   charge: 0
   chickenChirp: {fileID: 8300000, guid: 9ea063be5c137d346bfdab3c4f2e4bbf, type: 3}
@@ -10743,7 +10799,6 @@ MonoBehaviour:
   baseMaxY: 400
   incrementXZ: 200
   incrementY: 200
-  timerTarget: 0
   explodable: 0
   charge: 0
   chickenChirp: {fileID: 8300000, guid: 9ea063be5c137d346bfdab3c4f2e4bbf, type: 3}
@@ -10763,6 +10818,17 @@ MonoBehaviour:
   aSplode: 0
   explodable: 0
   charge: 0
+--- !u!114 &11482554
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 112758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ac6c52c4c09e0c4bb4e8917faf5f665, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11482706
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10795,6 +10861,17 @@ MonoBehaviour:
   aSplode: 0
   explodable: 0
   charge: 0
+--- !u!114 &11484952
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 199062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ac6c52c4c09e0c4bb4e8917faf5f665, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11488286
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10859,6 +10936,17 @@ MonoBehaviour:
   aSplode: 0
   explodable: 0
   charge: 0
+--- !u!114 &11493056
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ac6c52c4c09e0c4bb4e8917faf5f665, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11495782
 MonoBehaviour:
   m_ObjectHideFlags: 1
