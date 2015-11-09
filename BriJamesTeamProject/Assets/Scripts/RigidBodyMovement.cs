@@ -170,6 +170,14 @@ public class RigidBodyMovement : MonoBehaviour {
 			SoundMaker.GetComponent<SoundManager>().CharJump();
 			_myRigidbody.AddForce(Vector3.up * jumpForce);
 		}
+
+		if(grounded && Mathf.Abs(Input.GetAxis ("Horizontal")) > 0 || grounded && Mathf.Abs(Input.GetAxis ("Vertical")) > 0){
+				GrassSound.GetComponent<AudioSource>().volume = 0.25f;
+			}
+			else {
+				GrassSound.GetComponent<AudioSource>().volume = 0f;
+			}
+
 	}
 
 	void OnTriggerEnter(Collider other){
@@ -179,20 +187,20 @@ public class RigidBodyMovement : MonoBehaviour {
 	}
 
 	void OnTriggerStay(Collider other){
-		if (other.gameObject.tag == "Grass") {
-			if(Mathf.Abs(Input.GetAxis ("Horizontal")) > 0 || Mathf.Abs(Input.GetAxis ("Vertical")) > 0){
-				GrassSound.GetComponent<AudioSource>().volume = 0.25f;
-			}
-			else {
-				GrassSound.GetComponent<AudioSource>().volume = 0f;
-			}
-		}
+//		if (other.gameObject.tag == "Grass") {
+//			if(Mathf.Abs(Input.GetAxis ("Horizontal")) > 0 || Mathf.Abs(Input.GetAxis ("Vertical")) > 0){
+//				GrassSound.GetComponent<AudioSource>().volume = 0.25f;
+//			}
+//			else {
+//				GrassSound.GetComponent<AudioSource>().volume = 0f;
+//			}
+//		}
 
 	}
 
 	void OnTriggerExit (Collider other){
-		if (other.gameObject.tag == "Grass") {
-			GrassSound.GetComponent<AudioSource>().volume = 0f;
-		}
+//		if (other.gameObject.tag == "Grass") {
+//			GrassSound.GetComponent<AudioSource>().volume = 0f;
+//		}
 	}
 }
