@@ -196,7 +196,6 @@ MonoBehaviour:
   baseMaxY: 400
   incrementXZ: 200
   incrementY: 200
-  timerTarget: 0
   explodable: 0
   charge: 0
   chickenChirp: {fileID: 8300000, guid: 9ea063be5c137d346bfdab3c4f2e4bbf, type: 3}
