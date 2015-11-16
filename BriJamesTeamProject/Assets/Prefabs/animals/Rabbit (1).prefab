@@ -320,7 +320,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: .600000024
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -440,7 +440,6 @@ MonoBehaviour:
   baseMaxY: 400
   incrementXZ: 200
   incrementY: 200
-  timerTarget: 2
   explodable: 0
   charge: 0
   scaryLaugh: {fileID: 8300000, guid: 5d489309d26e5ac4a947125ddbe81bda, type: 3}
@@ -586,6 +585,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: MaxDistance
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Volume
+      value: .600000024
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
