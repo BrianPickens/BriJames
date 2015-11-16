@@ -172,7 +172,7 @@ public class RigidBodyMovement : MonoBehaviour {
 		}
 
 		if(grounded && Mathf.Abs(Input.GetAxis ("Horizontal")) > 0 || grounded && Mathf.Abs(Input.GetAxis ("Vertical")) > 0){
-				GrassSound.GetComponent<AudioSource>().volume = 0.25f;
+				GrassSound.GetComponent<AudioSource>().volume = 1f;
 			}
 			else {
 				GrassSound.GetComponent<AudioSource>().volume = 0f;
