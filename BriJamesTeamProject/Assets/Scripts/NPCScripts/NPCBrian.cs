@@ -14,23 +14,25 @@ public class NPCBrian : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (dialogueReady) {
-			if (Input.GetMouseButtonDown (0) || Input.GetKeyDown (KeyCode.Return) || Input.GetButtonDown ("X") || Input.GetButtonDown ("MacX")) {
-				if (dialogueOn) {
-					Dialogue.GetComponent<DialogueManager> ().EndDialogue ();
-					dialogueOn = false;
-				} else if (!dialogueOn) {
-					Dialogue.GetComponent<DialogueManager> ().Brian ();
-					dialogueOn = true;
-				}
-			}
-		}
+//		if (dialogueReady) {
+//			if (Input.GetMouseButtonDown (0) || Input.GetKeyDown (KeyCode.Return) || Input.GetButtonDown ("X") || Input.GetButtonDown ("MacX")) {
+//				if (dialogueOn) {
+//					Dialogue.GetComponent<DialogueManager> ().EndDialogue ();
+//					dialogueOn = false;
+//				} else if (!dialogueOn) {
+//					Dialogue.GetComponent<DialogueManager> ().Brian ();
+//					dialogueOn = true;
+//				}
+//			}
+//		}
 	}
 	
 	void OnTriggerEnter(Collider other){
 		
 		if (other.gameObject.tag == "Player") {
 			dialogueReady = true;
+			Dialogue.GetComponent<DialogueManager> ().Brian ();
+			dialogueOn = true;
 		}
 	}
 	

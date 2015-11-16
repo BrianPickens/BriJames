@@ -30,28 +30,35 @@ public class DialogueManager : MonoBehaviour {
 
 	public void Npc1(){
 		DialogueBox.SetActive (true);
-		CharacterText.text = "I Dare YOU to Jump!";
+		CharacterText.text = "I Dare You to Jump!";
 		CharacterSprite.GetComponent<Image> ().sprite = NPC1Sprite;
 		GetComponent<AudioSource> ().PlayOneShot (NPC1Voice);
 	}
 
 	public void James(){
 		DialogueBox.SetActive (true);
-		CharacterText.text = "I love my home!";
+		CharacterText.text = "I love my home so much!";
 		CharacterSprite.GetComponent<Image> ().sprite = JamesSprite;
 		GetComponent<AudioSource> ().PlayOneShot (JamesVoice);
 	}
 
 	public void JamesAngry(){
 		DialogueBox.SetActive (true);
-		CharacterText.text = "I remember when I had a home...It was great to feel safe.";
+		CharacterText.text = "I loved my home. Now I love my rubble.";
 		CharacterSprite.GetComponent<Image> ().sprite = JamesSprite;
 		GetComponent<AudioSource> ().PlayOneShot (JamesVoice);
 	}
 
 	public void Brian(){
 		DialogueBox.SetActive (true);
-		CharacterText.text = "What brings you here?";
+		CharacterText.text = "We're doing fine without any sky peep help, ok?";
+		CharacterSprite.GetComponent<Image> ().sprite = BrianSprite;
+		GetComponent<AudioSource> ().PlayOneShot (BrianVoice);
+	}
+
+	public void Howard(){
+		DialogueBox.SetActive (true);
+		CharacterText.text = "You came to help? We’re pretty good ourselves. No help needed. Thanks for offering though!";
 		CharacterSprite.GetComponent<Image> ().sprite = BrianSprite;
 		GetComponent<AudioSource> ().PlayOneShot (BrianVoice);
 	}
