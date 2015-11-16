@@ -40,6 +40,7 @@ public class SoundManager : MonoBehaviour {
 	}
 
 	public void Release(){
+		this.GetComponent<AudioSource> ().Stop ();
 		this.GetComponent<AudioSource> ().PlayOneShot (BeamRelease);
 	}
 	
