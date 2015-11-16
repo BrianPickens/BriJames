@@ -8210,7 +8210,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22406682, guid: 6341a22c2c3542e41bebba3a67d26a2d, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 22406682, guid: 6341a22c2c3542e41bebba3a67d26a2d, type: 2}
       propertyPath: m_AnchoredPosition.x

@@ -57,6 +57,7 @@ public class GodDialogue : MonoBehaviour {
 
 	public void God7(){
 		DialogueBox.SetActive (true);
+		GodTalk.fontSize = 22;
 		GodTalk.text = "My child, you should have followed the path; no matter, fall through the gate, find the village, and serve those in need.";
 		GetComponent<AudioSource> ().PlayOneShot (TalkSound);
 	}
