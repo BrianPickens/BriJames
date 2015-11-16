@@ -5,7 +5,7 @@ public class StartScreen : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		//Cursor.visible = false;
+		Cursor.visible = false;
 	}
 	
 	// Update is called once per frame
