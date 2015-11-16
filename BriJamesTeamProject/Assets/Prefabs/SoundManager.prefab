@@ -24,7 +24,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 129184}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.11004257, y: 2.32499695, z: -35.5796661}
+  m_LocalPosition: {x: -8.17923737, y: -14.6999998, z: 4.65614367}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c8c13163d3a6e947a378c8382be2959, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Beam: {fileID: 8300000, guid: 65a17758793936f49bb819f933380b47, type: 3}
+  Beam: {fileID: 8300000, guid: cb7fc3f4987cbf64f8318ed128f0d5b9, type: 3}
   Hit: {fileID: 8300000, guid: cef90d86406a0c147afd6f7b04dc0d0f, type: 3}
   Jump: {fileID: 8300000, guid: 7a4ccef20f5774440a1cb474b0de3add, type: 3}
   Land: {fileID: 8300000, guid: 47ee373879ab3dc4d8cd720ae54f6d7c, type: 3}

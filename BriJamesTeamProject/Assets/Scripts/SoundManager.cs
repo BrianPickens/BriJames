@@ -20,27 +20,28 @@ public class SoundManager : MonoBehaviour {
 	}
 
 	public void MakeSound(){
-
+		this.GetComponent<AudioSource> ().volume = 1f;
 		this.GetComponent<AudioSource> ().PlayOneShot (Beam);
 	}
 
 	public void HitOther(){
-
+		this.GetComponent<AudioSource> ().volume = 1f;
 		this.GetComponent<AudioSource> ().PlayOneShot (Hit);
 	}
 
 	public void CharJump(){
-
+		this.GetComponent<AudioSource> ().volume = 1f;
 		this.GetComponent<AudioSource> ().PlayOneShot (Jump);
 	}
 
 	public void CharLand(){
-
+		this.GetComponent<AudioSource> ().volume = 1f;
 		this.GetComponent<AudioSource> ().PlayOneShot (Land);
 	}
 
 	public void Release(){
 		this.GetComponent<AudioSource> ().Stop ();
+		this.GetComponent<AudioSource> ().volume = 0.5f;
 		this.GetComponent<AudioSource> ().PlayOneShot (BeamRelease);
 	}
 	
