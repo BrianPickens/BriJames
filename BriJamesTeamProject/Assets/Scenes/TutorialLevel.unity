@@ -9825,6 +9825,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BeamOfLight: {fileID: 1681177004}
+  Cloud1: {fileID: 0}
+  Cloud2: {fileID: 0}
+  clouds: 0
   shrink: 0
 --- !u!4 &1522778122 stripped
 Transform:
@@ -11403,7 +11406,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 478856, guid: c6427d4fb225611498b87c6bec1af1df, type: 2}
       propertyPath: m_RootOrder
-      value: 18
+      value: 19
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c6427d4fb225611498b87c6bec1af1df, type: 2}
