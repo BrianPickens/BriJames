@@ -102,7 +102,7 @@ public class Attack : MonoBehaviour {
 		if(other.gameObject.tag == "Cow" && charging == 2)
 		{
 			//SoundMaker.GetComponent<SoundManager>().HitOther();
-			//other.gameObject.GetComponent<Rigidbody>().mass = 1;
+			other.gameObject.GetComponent<Rigidbody>().mass = 1;
 			other.gameObject.GetComponent<Cow>().deadAnim = false;
 			// Destroy(other.gameObject);
 		}

@@ -68,7 +68,15 @@ public class Cow : MonoBehaviour {
 
 
 		if (!deadAnim) {
-			Vector3 deadFly = new Vector3(Random.Range(minXZ,maxXZ),Random.Range(minY, maxY),Random.Range(minXZ,maxXZ));
+			//Vector3 deadFly = new Vector3(Random.Range(minXZ,maxXZ),Random.Range(minY, maxY),Random.Range(minXZ,maxXZ));
+			Vector3 deadFly;
+			int flyDirection = Random.Range (0,2);
+			if(flyDirection == 1){
+			deadFly = new Vector3 (0,0,100);
+			}
+			else{
+				deadFly = new Vector3 (0,0,-100);
+			}
 			_myRigidbody.AddForce(deadFly);
 			deadAnim = true;
 		}
