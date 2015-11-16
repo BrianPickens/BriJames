@@ -20,6 +20,7 @@ TagManager:
   - Chicken
   - SwampWorm
   - JamesReaction
+  - PauseBlock
   layers:
   - Default
   - TransparentFX

@@ -184,6 +184,10 @@ public class RigidBodyMovement : MonoBehaviour {
 		if (other.gameObject.tag == "StarterBlock") {
 			gameStart = true;
 		}
+
+		if (other.gameObject.tag == "PauseBlock") {
+			gameStart = false;
+		}
 	}
 
 	void OnTriggerStay(Collider other){
