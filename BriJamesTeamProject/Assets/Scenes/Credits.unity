@@ -250,7 +250,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 370, y: 163}
+  m_AnchoredPosition: {x: 323.299988, y: 163}
   m_SizeDelta: {x: 315, y: 262.5}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &310347015
@@ -284,10 +284,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Credits
-
-
-    James and Brian Made this game!  We hope you enjoyed it!'
+  m_Text: "Credits\n\nJames, Brian, and Julie Made this Game!  \n\nWe hope you enjoyed
+    it!"
 --- !u!222 &310347016
 CanvasRenderer:
   m_ObjectHideFlags: 0
