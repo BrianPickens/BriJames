@@ -158,7 +158,12 @@ public class RigidBodyMovement : MonoBehaviour {
 			GrassSound.GetComponent<AudioSource>().volume = 0f;
 
 		} else {
-			if (SunLight.GetComponent<Light> ().intensity > 1.25f) {
+			if(Application.loadedLevelName == "Heaven1"){
+				if (SunLight.GetComponent<Light> ().intensity > 0.4f) {
+					SunLight.GetComponent<Light> ().intensity -= 0.20f;
+				}
+			}
+			else if (SunLight.GetComponent<Light> ().intensity > 1.25f) {
 				SunLight.GetComponent<Light> ().intensity -= 0.25f;
 			}
 
