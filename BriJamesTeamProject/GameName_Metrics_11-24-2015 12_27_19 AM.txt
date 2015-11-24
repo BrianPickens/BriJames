@@ -1,0 +1,8 @@
+Number of times Jump: 46
+Number of times Used Power: 46
+Number of Cows Tipped: 5
+Number of Pieces Exploded: 272
+Start Time: 3.61174
+Heaven Time: 39.3534
+Tutorial Time: 167.6822
+Hub Time: 71.87972
