@@ -7238,6 +7238,7 @@ GameObject:
   - 23: {fileID: 835557399}
   - 95: {fileID: 835557398}
   - 114: {fileID: 835557397}
+  - 114: {fileID: 835557403}
   m_Layer: 0
   m_Name: swamp (1)
   m_TagString: Untagged
@@ -7353,7 +7354,21 @@ Transform:
   - {fileID: 2052729556}
   - {fileID: 2057757212}
   m_Father: {fileID: 0}
-  m_RootOrder: 70
+  m_RootOrder: 76
+--- !u!114 &835557403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 835557396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01ffa6790e8873241a3b4632ef1fa5f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Swamp1: {fileID: 2100000, guid: f27db50b595979f4eba93bb88f36987c, type: 2}
+  Swamp2: {fileID: 2100000, guid: 9e9796e81c3097c49b2b9e393e5b2165, type: 2}
+  Swamp3: {fileID: 2100000, guid: 782bbc7fe244bcb469f645ad41c1d2df, type: 2}
 --- !u!1 &840827790
 GameObject:
   m_ObjectHideFlags: 0
