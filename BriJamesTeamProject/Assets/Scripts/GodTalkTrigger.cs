@@ -11,11 +11,12 @@ public class GodTalkTrigger : MonoBehaviour {
 	public bool god5;
 	public bool god6;
 	public bool god7;
+	public bool godgoodbye;
 	public bool godOff;
 
 	// Use this for initialization
 	void Start () {
-	
+
 	}
 	
 	// Update is called once per frame
@@ -25,7 +26,7 @@ public class GodTalkTrigger : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other){
 		if (other.gameObject.tag == "Player") {
-
+		
 			if (god1) {
 				GodsVoice.GetComponent<GodDialogue> ().God1 ();
 			} else if (god2) {
@@ -40,6 +41,8 @@ public class GodTalkTrigger : MonoBehaviour {
 				GodsVoice.GetComponent<GodDialogue> ().God6 ();
 			} else if (god7) {
 				GodsVoice.GetComponent<GodDialogue> ().God7 ();
+			}else if (godgoodbye){
+				GodsVoice.GetComponent<GodDialogue> ().GodFarewell();
 			} else if (godOff){
 				GodsVoice.GetComponent<GodDialogue> ().EndGod ();
 			}

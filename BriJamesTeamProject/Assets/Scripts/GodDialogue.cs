@@ -62,6 +62,12 @@ public class GodDialogue : MonoBehaviour {
 		GetComponent<AudioSource> ().PlayOneShot (TalkSound);
 	}
 
+	public void GodFarewell(){
+		DialogueBox.SetActive (true);
+		GodTalk.text = "Farewell my child! Make me proud!";
+		GetComponent<AudioSource> ().PlayOneShot (TalkSound);
+	}
+
 	public void EndGod(){
 		DialogueBox.SetActive (false);
 	}
