@@ -402,8 +402,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Credits\n\nJames, Brian, and Julie Made this Game!  \n\nWe hope you enjoyed
-    it!"
+  m_Text: 'James, Brian, and Julie Made this Game!  '
 --- !u!222 &310347016
 CanvasRenderer:
   m_ObjectHideFlags: 0
