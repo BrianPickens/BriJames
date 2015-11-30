@@ -11,6 +11,7 @@ public class GodTalkTrigger : MonoBehaviour {
 	public bool god5;
 	public bool god6;
 	public bool god7;
+	public bool fearTheLedge;
 	public bool godgoodbye;
 	public bool godOff;
 
@@ -41,7 +42,9 @@ public class GodTalkTrigger : MonoBehaviour {
 				GodsVoice.GetComponent<GodDialogue> ().God6 ();
 			} else if (god7) {
 				GodsVoice.GetComponent<GodDialogue> ().God7 ();
-			}else if (godgoodbye){
+			} else if (fearTheLedge){
+				GodsVoice.GetComponent<GodDialogue> ().FearTheLedge();
+			} else if (godgoodbye){
 				GodsVoice.GetComponent<GodDialogue> ().GodFarewell();
 			} else if (godOff){
 				GodsVoice.GetComponent<GodDialogue> ().EndGod ();

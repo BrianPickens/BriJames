@@ -30,7 +30,7 @@ public class DialogueManager : MonoBehaviour {
 
 	public void Npc1(){
 		DialogueBox.SetActive (true);
-		CharacterText.text = "I Dare You to Jump!";
+		CharacterText.text = "I'm too afraid to make the jump!";
 		CharacterSprite.GetComponent<Image> ().sprite = NPC1Sprite;
 		GetComponent<AudioSource> ().PlayOneShot (NPC1Voice);
 	}

@@ -68,6 +68,12 @@ public class GodDialogue : MonoBehaviour {
 		GetComponent<AudioSource> ().PlayOneShot (TalkSound);
 	}
 
+	public void FearTheLedge(){
+		DialogueBox.SetActive (true);
+		GodTalk.text = "I forbid you to jump from this ledge my child.";
+		GetComponent<AudioSource> ().PlayOneShot (TalkSound);
+	}
+
 	public void EndGod(){
 		DialogueBox.SetActive (false);
 	}
